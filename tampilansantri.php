@@ -13,88 +13,52 @@
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
     <style>
-        /* Tema dark untuk body */
+        /* Tampilan terang untuk seluruh halaman */
         body {
-            background-color: #121212;
-            /* Warna latar hitam */
-            color: #ffffff;
-            /* Teks putih */
+            background-color: #ffffff;
+            /* Latar belakang putih */
+            color: #000000;
+            /* Teks hitam */
         }
 
+        /* Styling untuk container utama */
         .container {
-            background-color: #1f1f1f;
-            /* Latar kontainer abu gelap */
+            background-color: #f9f9f9;
+            /* Latar belakang kontainer putih terang */
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             /* Efek bayangan */
         }
 
-        table.dataTable {
-            color: #ffffff;
-            /* Warna teks tabel */
-            background-color: #2a2a2a;
-            /* Latar belakang tabel */
+        /* Styling untuk input */
+        .form-control {
+            background-color: #e9e9e9;
+            /* Latar belakang input abu muda */
+            color: #000000;
+            /* Teks input hitam */
+            border: 1px solid #cccccc;
+            /* Border abu muda */
         }
 
-        table.dataTable thead th {
-            background-color: #333333;
-            /* Latar belakang header tabel */
-            color: #ffffff;
-            /* Warna teks header */
+        /* Styling saat input dalam kondisi fokus */
+        .form-control:focus {
+            background-color: #d9d9d9;
+            /* Latar belakang saat fokus */
+            color: #000000;
+            border-color: #007bff;
+            /* Warna biru saat fokus */
         }
 
-        table.dataTable tbody tr {
-            background-color: #2a2a2a;
-            /* Latar belakang baris tabel */
-        }
-
-        table.dataTable tbody tr:hover {
-            background-color: #444444;
-            /* Warna baris tabel saat hover */
-            color: #121212;
-        }
-
-        /* Tetap gelap saat diklik */
-        table.dataTable tbody tr:focus,
-        table.dataTable tbody tr:active,
-        table.dataTable tbody td:focus,
-        table.dataTable tbody td:active {
-            background-color: #444444 !important;
-            color: #ffffff !important;
-        }
-
-        /* Mencegah teks di kolom tabel berubah warna */
-        table.dataTable tbody td {
-            user-select: none;
-            /* Mencegah seleksi teks */
-        }
-
-        /* Warna tetap untuk tautan */
-        a {
-            color: #ffffff;
-        }
-
-        a:hover {
-            color: #121212;
-            /* Warna biru saat hover */
-            text-decoration: none;
-        }
-
-        /* Tombol dengan tema gelap */
+        /* Styling untuk tombol utama */
         .btn-primary {
             background-color: #007bff;
             border: none;
+            color: white;
         }
 
-        .btn-success {
-            background-color: #28a745;
-            border: none;
-        }
-
-        .btn-danger {
-            background-color: #dc3545;
-            border: none;
+        .btn-primary:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>

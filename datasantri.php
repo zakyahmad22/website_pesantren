@@ -1,6 +1,7 @@
 <?php
 
 include 'config.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -16,49 +17,53 @@ include 'config.php';
 <link rel="icon" href="image/logo.png" type="image/icon">
 
 
-
 <body class="dashboard-page">
 
     <body>
 
         <style>
-            /* Tema Dark untuk seluruh halaman */
+            /* Tampilan terang untuk seluruh halaman */
             body {
-                background-color: #121212;
-                /* Latar belakang hitam */
-                color: #ffffff;
-                /* Teks putih */
+                background-color: #ffffff;
+                /* Latar belakang putih */
+                color: #000000;
+                /* Teks hitam */
             }
 
+            /* Styling untuk container utama */
             .container {
-                background-color: #1f1f1f;
-                /* Latar belakang kontainer */
+                background-color: #f9f9f9;
+                /* Latar belakang kontainer putih terang */
                 padding: 20px;
                 border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 /* Efek bayangan */
             }
 
+            /* Styling untuk input */
             .form-control {
-                background-color: #2a2a2a;
-                /* Latar belakang input */
-                color: #ffffff;
-                /* Teks input */
-                border: 1px solid #444444;
-                /* Border abu gelap */
+                background-color: #e9e9e9;
+                /* Latar belakang input abu muda */
+                color: #000000;
+                /* Teks input hitam */
+                border: 1px solid #cccccc;
+                /* Border abu muda */
             }
 
+            /* Styling saat input dalam kondisi fokus */
             .form-control:focus {
-                background-color: #333333;
+                background-color: #d9d9d9;
                 /* Latar belakang saat fokus */
-                color: #ffffff;
+                color: #000000;
                 border-color: #007bff;
                 /* Warna biru saat fokus */
             }
 
+            /* Styling untuk tombol utama */
             .btn-primary {
                 background-color: #007bff;
                 border: none;
+                color: white;
             }
 
             .btn-primary:hover {
@@ -68,7 +73,7 @@ include 'config.php';
 
         <div class="container mt-5">
             <h2 class="text-center">Form Pendaftaran Santri</h2>
-            <form action="simpan_santri.php" method="POST">
+            <form action="data.php" method="POST">
                 <div class="form-group">
                     <label>Id Santri</label>
                     <input type="text" name="id_santri" class="form-control" required>

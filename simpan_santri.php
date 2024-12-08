@@ -14,9 +14,15 @@ $Email = $_POST['email'];
 // mysqli_query: menjalankan query ke database
 // mysqli_close: digunakan untuk menutup koneksi database yang terbuka
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    var_dump($_POST); // Untuk melihat data yang dikirim
+    // Lakukan proses query setelah ini
+}
+
+
 $sql = "INSERT INTO santri (id, nama, alamat, email) VALUES ('$Id', '$Nama', '$Alamat', '$Email')";
 if (mysqli_query($koneksi, $sql)) {
-    header("Location: tampilansantri.php");
+    header("Location: pendaftaran.html");
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($koneksi);
 }

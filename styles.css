@@ -22,7 +22,47 @@
   color: #fff;
 }
 
-.background2 {
+.foto {
+  background: url("image/foto6.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 25%;
+  color: #fff;
+}
+
+.bg {
+  background: url("image/foto9.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 25%;
+  color: #fff;
+}
+
+.saya {
+  background: url("image/foto7.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 25%;
+  color: #fff;
+}
+
+.tarkom {
+  background: url("image/foto1.JPG") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 25%;
+  color: #fff;
+}
+
+.khitobah {
+  background: url("image/kegiatan1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 25%;
+  color: #fff;
+}
+
+.praktek-mengajar {
   background: url("image/mengajar.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 20%;

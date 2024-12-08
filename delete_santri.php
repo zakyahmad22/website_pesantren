@@ -25,7 +25,7 @@ if (isset($_GET['Id']) && !empty($_GET['Id'])) {
 
     if (mysqli_query($koneksi, $query)) {
         // Redirect kembali ke halaman utama setelah berhasil menghapus data
-        header("Location: tampilansantri.php"); 
+        header("Location: data.php"); 
         exit(); // Pastikan skrip berhenti setelah redirect
     } else {
         echo "Error menghapus data: " . mysqli_error(mysql: $koneksi);
