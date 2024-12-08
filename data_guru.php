@@ -139,38 +139,44 @@ include 'sidebar.php';
 </head>
 
 <body>
-    <div class="container mt-3">
-        <h2 class="text-center">Data Guru</h2>
-        <a href="tambah_guru.php" class="btn-primary mb-3">+ Tambah Data Guru</a>
-        <div class="table-wrapper mt-4">
-            <!-- Tabel data guru -->
-            <table id="dataGuru" class="display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>Email</th>
-                        <th>Telepon</th>
-                        <th>Alamat</th>
-                        <th>Tanggal Lahir</th>
-                        <th>Jenis Kelamin</th>
-                        <th>Mata Pelajaran</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    // Koneksi ke database
-                    require_once 'config.php';
+<div class="container mt-3">
+    <h2 class="text-center">Data Guru</h2>
+    <a href="tambah_guru.php" class="btn-primary mb-3">+ Tambah Data Guru</a>
+    <div class="table-wrapper mt-4">
+        <?php
+        if ($_SESSION['role'] !== 'petugas') {
+            echo "Anda tidak berhak mengakses halaman ini.";
+            exit;
+        }
+        ?>
+        <!-- Tabel data guru -->
+        <table id="dataGuru" class="display" style="width:100%">
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Telepon</th>
+                <th>Alamat</th>
+                <th>Tanggal Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Mata Pelajaran</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php
+            // Koneksi ke database
+            require_once 'config.php';
 
-                    // Query untuk mengambil semua data dari tabel guru
-                    $sql = "SELECT * FROM guru";
-                    $result = $koneksi->query($sql);
+            // Query untuk mengambil semua data dari tabel guru
+            $sql = "SELECT * FROM guru";
+            $result = $koneksi->query($sql);
 
-                    if ($result->num_rows > 0) {
-                        $no = 1;
-                        while ($row = $result->fetch_assoc()) {
-                            echo "<tr>
+            if ($result->num_rows > 0) {
+                $no = 1;
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr>
                                 <td>{$no}</td>
                                 <td>" . htmlspecialchars($row['Nama']) . "</td>
                                 <td>" . htmlspecialchars($row['Email']) . "</td>
@@ -186,33 +192,33 @@ include 'sidebar.php';
                                     </div>
                                 </td>
                             </tr>";
-                            $no++;
-                        }
-                    } else {
-                        echo "<tr><td colspan='9'>Tidak ada data guru.</td></tr>";
-                    }
-                    ?>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <script>
-        $(document).ready(function () {
-            // Inisialisasi DataTables
-            $('#dataGuru').DataTable({
-                paging: true,          // Aktifkan pagination
-                searching: true,       // Aktifkan pencarian
-                scrollCollapse: true,  // Collapse jika data sedikit
-                language: {
-                    search: "Cari Guru:", // Ubah label pencarian
-                    lengthMenu: "Tampilkan _MENU_ data",
-                    info: "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
-                    infoFiltered: "(difilter dari _MAX_ total data)"
+                    $no++;
                 }
-            });
+            } else {
+                echo "<tr><td colspan='9'>Tidak ada data guru.</td></tr>";
+            }
+            ?>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Inisialisasi DataTables
+        $('#dataGuru').DataTable({
+            paging: true,          // Aktifkan pagination
+            searching: true,       // Aktifkan pencarian
+            scrollCollapse: true,  // Collapse jika data sedikit
+            language: {
+                search: "Cari Guru:", // Ubah label pencarian
+                lengthMenu: "Tampilkan _MENU_ data",
+                info: "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
+                infoFiltered: "(difilter dari _MAX_ total data)"
+            }
         });
-    </script>
+    });
+</script>
 </body>
 
 </html>
