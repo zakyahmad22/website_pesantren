@@ -122,10 +122,6 @@
                     <i class="fas fa-solid fa-user"></i>
                     <span class="nav-item">Data Guru</span>
                 </a></li>
-            <li><a href="pelajaran.php">
-                    <i class="fas fa-solid fa-book-open"></i>
-                    <span class="nav-item">Pelajaran</span>
-                </a></li>
             <li><a href="logout.php" class="logout">
                     <i class="fas fa-sign-out-alt"></i>
                     <span class="nav-item">Log out</span>

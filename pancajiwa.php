@@ -2,7 +2,6 @@
 include 'navbar.php';
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,26 +12,42 @@ include 'navbar.php';
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="image/logo.png" type="image/icon">
 
 <body>
 
+    <style>
+        /* Efek hover untuk semua teks di navbar */
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .dropdown-toggle:hover,
+        .dropdown-menu .dropdown-item:hover {
+            color: #343434 !important;
+            /* Warna teks berubah menjadi hitam */
+            /* text-decoration: underline; */
+            /* Garis bawah muncul saat hover */
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+            /* Efek transisi */
+        }
+
+        /* Hover khusus pada dropdown menu */
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #e1e1e1;
+            /* Latar belakang biru saat hover */
+            color: #ffffff;
+            /* Warna teks menjadi putih */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Transisi lembut */
+        }
+    </style>
 
 
-    <!-- navbar awal -->
 
-    <!-- navbar akhir -->
-
-    <!-- profile awal -->
-    <div class="container-fluid mt-5 pt-5">
+    <!-- panca jiwa awal -->
+    <div class="container-fluid mt-5 pt-5 pb-2">
         <div class="container">
-            <!-- <h2 class="display-6 text-center font-family-sans-serif fw-bold" id="about">Profile Pondok</h2> -->
-            <div class="clearfix pt-4">
-                <img src="image/logo.png" class="img-fluid col-md-3 float-md-end mb-3" alt="logo">
-                <!-- <img src="image/logo.png" class="col-md-3 float-md-end mb-3" width="50" height="300"> -->
-                <h1 class="font-family-sans-serif fw-bold fs-3">Sejarah <br> Pondok Modern Al Muflihin</h1>
+            <div class="clearfix pt-5">
+                <h1 class="font-family-sans-serif fw-bold fs-2">Panca Jiwa</h1>
                 <p style="text-align: justify;">
                     Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
                     menyelenggarakan pendidikan untuk
@@ -52,95 +67,58 @@ include 'navbar.php';
                     kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren
                     Modern.
                 </p>
-                <hr class="my-4" style="border: 2px solid #333;">
-
-                <h2 class="font-family-sans-serif fw-bold fs-4">Sistem Pendidikan</h2>
-                <h3 class="font-family-sans-serif fw-bold fs-4">Tarbiyatul Muallimin Al-Islamiyah (TMI)</h3>
-                <p style="text-align: justify;">TMI adalah lembaga pendidikan tingkat dasar dan menengah yang berarti
-                    setingkat dengan Madrasah
-                    Tsanawiyah dan Madrasah
-                    Aliyah, atau dengan Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA). TMI adalah
-                    lembaga pendidikan tingkat dasar dan menengah yang berarti setingkat dengan Madrasah
-                    Tsanawiyah dan Madrasah
-                    Aliyah, atau dengan Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA). TMI adalah
-                    lembaga pendidikan tingkat dasar dan menengah yang berarti setingkat dengan Madrasah
-                    Tsanawiyah dan Madrasah
-                    Aliyah, atau dengan Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA).</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="container-fluid mt-0 pt-0 pb-5">
-        <div class="container">
-            <div class="clearfix pt-5">
-                <img src="image/foto3.jpg" class="col-md-6 float-md-center mb-3 crop-img rounded-4" width="300"
-                    height="300">
-                <h1 class="font-family-sans-serif fw-bold fs-4">Pondok Modern Al Muflihin</h1>
-                <p style="text-align: justify;">
-                    Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
-                    menyelenggarakan pendidikan untuk
-                    megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
-                    keserdasan, intelektual,
-                    kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren
-                    Modern
-                    dengan manhaj Darunnajah dan Gontor yang
-                    menyelenggarakan pendidikan untuk
-                    megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
-                    keserdasan, intelektual,
-                    kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren Modern
-                    dengan manhaj Darunnajah dan Gontor yang
-                    menyelenggarakan pendidikan untuk
-                    megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
-                    keserdasan, intelektual,
-                    kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren
-                    Modern.
-                </p>
-                <h2 class="font-family-sans-serif fw-bold fs-4">Sistem Pendidikan</h2>
-                <h3 class="font-family-sans-serif fw-bold fs-4">Tarbiyatul Muallimin Al-Islamiyah (TMI)</h3>
-                <p style="text-align: justify;">TMI adalah lembaga pendidikan tingkat dasar dan menengah yang berarti
-                    setingkat dengan Madrasah
-                    Tsanawiyah dan Madrasah
-                    Aliyah, atau dengan Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA). TMI adalah
-                    lembaga pendidikan tingkat dasar dan menengah yang berarti setingkat dengan Madrasah
-                    Tsanawiyah dan Madrasah
-                    Aliyah, atau dengan Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA). TMI adalah
-                    lembaga pendidikan tingkat dasar dan menengah yang berarti setingkat dengan Madrasah
-                    Tsanawiyah dan Madrasah
-                    Aliyah, atau dengan Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA).</p>
+                <h3 class="font-family-sans-serif fw-bold fs-4">Panca Jiwa adalah lima nilai yang mendasari kehidupan
+                    Pondok Modern Al-Muflihin:</h3>
+                <h1 class="font-family-sans-serif fs-5">1. Jiwa Keikhlasan</h1>
+                <p style="text-align: justify;">Jiwa ini berarti sepi ing pamrih, yakni berbuat sesuatu bukan karena
+                    didorong oleh keinginan untuk
+                    mendapatkan
+                    keuntungan tertentu. Segala perbuatan dilakukan dengan niat semata-mata untuk ibadah, lillah. Kyai
+                    ikhlas medidik dan
+                    para pembantu kyai ikhlas dalam membantu menjalankan proses pendidikan serta para santri yang ikhlas
+                    dididik.</p>
+                <h2 class="font-family-sans-serif fs-5">2. Jiwa kesederhanaan</h2>
+                <p style="text-align: justify;">Kehidupan di pondok diliputi oleh suasana kesederhanaan. Sederhana tidak
+                    berarti pasif atau nerimo,
+                    tidak juga berarti
+                    miskin dan melarat. Justru dalam jiwa kesederhanan itu terdapat nilai-nilai kekuatan, kesanggupan,
+                    ketabahan dan
+                    penguasaan diri dalam menghadapi perjuangan hidup.</p>
+                <h3 class="font-family-sans-serif fs-5">3. Jiwa Berdikari</h3>
+                <p style="text-align: justify;">Berdikari atau kesanggupan menolong diri sendiri merupakan senjata ampuh
+                    yang dibekalkan pesantren
+                    kepada para
+                    santrinya. Berdikari tidak saja berarti bahwa santri sanggup belajar dan berlatih mengurus segala
+                    kepentingannya
+                    sendiri, tetapi pondok pesantren itu sendiri sebagai lembaga pendidikan juga harus sanggup berdikari
+                    sehingga tidak
+                    pernah menyandarkan kehidupannya kepada bantuan atau belas kasihan pihak lain .</p>
+                <h4 class="font-family-sans-serif fs-5">4. Jiwa Ukhuwwah Islamiah</h4>
+                <p style="text-align: justify;">Kehidupan di pondok pesantren diliputi suasana persaudaraan yang akrab,
+                    sehingga segala suka dan duka
+                    dirasakan bersama
+                    dalam jalinan ukhuwwah Islamiah. Tidak ada dinding yang dapat memisahkan antara mereka. Ukhuwah ini
+                    bukan saja selama
+                    mereka di Pondok, tetapi juga mempengaruhi ke arah persatuan ummat dalam masyarakat setelah mereka
+                    terjun di masyarakat.</p>
+                <h5 class="font-family-sans-serif fs-5">5. Jiwa Bebas</h5>
+                <p style="text-align: justify;">Bebas dalam berpikir dan berbuat, bebas dalam menentukan masa depan,
+                    bebas dalam memilih jalan hidup,
+                    dan bahkan bebas
+                    dari berbagai pengaruh negatif dari luar, masyarakat. Jiwa bebas ini akan menjadikan santri berjiwa
+                    besar dan optimis
+                    dalam menghadapi segala kesulitan. Hanya saja dalam kebebasan ini seringkali ditemukan unsur-unsur
+                    negatif, yaitu
+                    apabila kebebasan itu disalahgunakan, sehingga terlalu bebas (liberal) dan berakibat hilangnya arah
+                    dan tujuan atau
+                    prinsip.</p>
             </div>
         </div>
     </div>
-    <!-- <div class="card-group">
-        <div class="card">
-            <img src="image/mengajar.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Kegiatan Belajar Mengajar</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/mengajar.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/mengajar.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div> -->
-    <!-- profile akhir -->
+    <!-- panca jiwa akhir -->
 
     <!-- footer awal -->
+
     <footer class="bg-light text-white text-center py-4">
         <footer id="sticky-footer">
             <div class="container text-center">
@@ -229,6 +207,7 @@ include 'navbar.php';
     </footer>
 
     <!-- footer akhir -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

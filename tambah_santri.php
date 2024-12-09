@@ -1,6 +1,7 @@
 <?php
 // Koneksi ke database
 include 'config.php';
+// include 'cek_auth.php';
 
 // Cek apakah form telah di-submit
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -16,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result) {
         echo "<script>
                 alert('Data berhasil ditambahkan!');
-                window.location.href = 'data.php';
+                window.location.href = 'home.php';
                 </script>";
     } else {
         echo "<script>

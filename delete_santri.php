@@ -3,6 +3,7 @@
 // Konfigurasi koneksi ke database
 
 include 'config.php';
+include 'cek_auth.php';
 
 // Periksa apakah parameter 'id' dikirimkan
 // isset($_GET['Id']): memeriksa apakah parameter Id dikirim melalui URL menggunakan metode GET

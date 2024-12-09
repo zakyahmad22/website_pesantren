@@ -1,3 +1,7 @@
+<?php
+include 'navbar.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,48 +42,7 @@
         }
     </style>
 
-    <!-- navbar awal -->
-    <nav class="navbar navbar-expand-lg bg-success fixed-top shadow-lg">
-        <div class="container">
-            <a href="index.html" class="navbar-expand-lg">
-                <a href="#top">
-                    <img src="image/logo1.png" alt="logo1" width="150" height="65">
-                </a>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" aria-current="page" href="home.html">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light text-decoration-none" href="profile.html">Tentang</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="activity.html">Kegiatan</a>
-                    </li>
-                    <div class="dropdown nav-item">
-                        <a class="dropdown-toggle nav-link text-light text-decoration-none" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Pendaftaran
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="pendaftaran.html">Info Pendaftaran</a></li>
-                            <li><a class="dropdown-item" href="tesujian.html">Tes Ujian</a></li>
-                        </ul>
-                    </div>
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="contact.html">Kontak</a>
-                    </li>
-                </div>
-            </div>
-        </div>
-    </nav>
 
-    <!-- navbar akhir -->
 
     <!-- foto kegiatan awal -->
     <section class="foto">
@@ -103,7 +66,8 @@
 
     <div class="container-fluid mt-4 pb-3">
         <div class="container ">
-            <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Kegiatan Belajar Mengajar</h2>
+            <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Kegiatan Belajar
+                Mengajar</h2>
             <p>Pembelajaran santri merujuk pada proses pendidikan dan pengembangan karakter di lingkungan pesantren,
                 tempat para santri
                 (siswa) belajar agama, ilmu pengetahuan, dan keterampilan lainnya. Pesantren adalah lembaga pendidikan
@@ -175,61 +139,95 @@
 
     <!-- kegiatan akhir -->
 
-    <footer class="footer bg-success text-center text-light mt-4 py-5">
-        <div class="container">
-            <div class="row text-center text-md-left">
-                <!-- Tentang Pondok -->
-                <div class="col-12 col-md-6 col-lg-3 mb-4">
-                    <h6 class="text-uppercase mb-4 fw-bold">Pondok Modern Al Muflihin</h6>
-                    <p>Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Prov. Jawa Barat.</p>
-                </div>
+    <!-- footer awal -->
 
-                <!-- Menu Links -->
-                <div class="col-6 col-md-3 col-lg-2 mb-4">
-                    <h6 class="text-uppercase mb-3 fw-bold">Menu</h6>
-                    <p><a href="#home" class="text-light" style="text-decoration: none;">Home</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Program</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Profile</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Activity</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Contact</a></p>
-                </div>
-
-                <!-- Program Links -->
-                <div class="col-6 col-md-3 col-lg-2 mb-4">
-                    <h6 class="text-uppercase mb-3 fw-bold">Program</h6>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Pidato 3 Bahasa</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Jurnalistik</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Pramuka</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Praktek Mengajar</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Manasik Haji</a></p>
-                </div>
-
-
-                <div class="col-6 col-md-3 col-lg-2 mb-4">
-                    <h6 class="text-uppercase mb-3 fw-bold">Activity</h6>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Kegiatan Belajar</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Haul Almagfurlah</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Perpustakaan</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Tari Kombinasi</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Praktek Khitobah</a></p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Praktek Mengajar</a></p>
-                </div>
-
-                <!-- Contact Links -->
-                <div class="col-6 col-md-3 col-lg-2 mb-4">
-                    <h6 class="text-uppercase mb-3 fw-bold">Contact</h6>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Ust. M. Riswandi Bahuwa, S.H</a>
-                    </p>
-                    <p><a href="#" class="text-light" style="text-decoration: none;">Program</a></p>
+     <footer class="bg-light text-white text-center py-4">
+        <footer id="sticky-footer">
+            <div class="container text-center">
+                <p class="mb-0"></p>
+        </footer>
+</div>
+</footer>
+<footer class="bg-success text-light py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Section 1: Info -->
+            <div class="col-md-3 mb-4">
+                <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
+                <p class="pt-3">
+                    <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        class="text-light mx-2 text-decoration-none" target="_blank">
+                        <i class="fas fa-map-marker-alt fa-lg"></i>
+                        Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.
+                    </a>
+                </p>
+                <!-- Social Media Icons -->
+                <div class="mt-0">
+                    <a href="https://twitter.com/almuflihin_crb" class="text-light mx-2"><i
+                            class="fab fa-twitter fa-lg"></i></a>
+                    <a href="https://www.tiktok.com/@almuflihin_cirebon?lang=id-id&is_from_webapp=1&sender_device=mobile&sender_web_id=7192400905366537729"
+                        class="text-light mx-2"><i class="fab fa-tiktok fa-lg"></i></a>
+                    <a href="https://www.facebook.com/Pesantrenalmuflihin" class="text-light mx-2"><i
+                            class="fab fa-facebook fa-lg"></i></a>
+                    <a href="https://www.instagram.com/almuflihin_cirebon?igshid=MzRlODBiNWFlZA%3D%3D"
+                        class="text-light mx-2"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://web.whatsapp.com/+62 882-0060-16690" class="text-light mx-2" target="_blank"><i
+                            class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="https://www.youtube.com/@almuflihincirebon7929" class="text-light mx-2"><i
+                            class="fab fa-youtube fa-lg"></i></a>
                 </div>
             </div>
-
-            <hr class="my-4" style="border: 2px solid #fff">
-            <div class="text-center">
-                <p class="mt-4 mb-0">&copy; Pondok Pesantren Modern Al Muflihin Tahun Ajaran 2024</p>
+            <!-- Section 2: Menu -->
+            <div class="col-md-2 mb-4">
+                <h5 class="text-uppercase fw-bold">Menu</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
+                    <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
+                    <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
+                    <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Section 3: Program -->
+            <div class="col-md-2 mb-4">
+                <h5 class="text-uppercase fw-bold">Program</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="#" class="text-light text-decoration-none">Pidato 3 Bahasa</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Jurnalistik</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Pramuka</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Praktek Mengajar</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Manasik Haji</a></li>
+                </ul>
+            </div>
+            <!-- Section 4: Activity -->
+            <div class="col-md-2 mb-4">
+                <h5 class="text-uppercase fw-bold">Activity</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="kbm.php" class="text-light text-decoration-none">Kegiatan Belajar</a></li>
+                    <li><a href="haul.php" class="text-light text-decoration-none">Haul Almagfurlah</a></li>
+                    <li><a href="perpus.php" class="text-light text-decoration-none">Perpustakaan</a></li>
+                    <li><a href="tarkom.php" class="text-light text-decoration-none">Tari Kombinasi</a></li>
+                    <li><a href="khitobah.php" class="text-light text-decoration-none">Praktek Khitobah</a></li>
+                </ul>
+            </div>
+            <!-- Section 5: Contact -->
+            <div class="col-md-3 mb-4">
+                <h5 class="text-uppercase fw-bold">Contact</h5>
+                <ul class="list-unstyled mt-3">
+                    <li>Email: <a href="https://ponpesalmuflihincirebon@gmail.com"
+                            class="text-light text-decoration-none">ponpesalmuflihincirebon@gmail.com</a></li>
+                    <li>Phone: <br>- Ust. Riswandi Bahuwa, S.H <br> 081234567890</li>
+                    <li>- Ustadzah Fitri, S.H <br> 081234567890</li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <!-- Footer Bottom -->
+        <hr class="text-light">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Pondok Modern Al Muflihin | Gebang Ilir, Gebang, Cirebon, Jawa Barat</p>
+        </div>
+    </div>
+</footer>
+
     <!-- footer akhir -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

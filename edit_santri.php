@@ -1,5 +1,6 @@
 <?php
 include 'config.php';
+include 'cek_auth.php';
 
 // Cek apakah id ada di URL
 // isset($_GET['id']): memastikan bahwa parameter id ada di URL

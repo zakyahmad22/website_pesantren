@@ -144,6 +144,8 @@ include 'sidebar.php';
     <a href="tambah_guru.php" class="btn-primary mb-3">+ Tambah Data Guru</a>
     <div class="table-wrapper mt-4">
         <?php
+        // var_dump($_SESSION);
+        // exit; 
         if ($_SESSION['role'] !== 'petugas') {
             echo "Anda tidak berhak mengakses halaman ini.";
             exit;

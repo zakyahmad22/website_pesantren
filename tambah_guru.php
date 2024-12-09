@@ -1,6 +1,7 @@
 <?php
 // Koneksi database
 require_once 'config.php';
+include 'cek_auth.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nama = $_POST['Nama'];
@@ -166,7 +167,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="text" name="Mata_pelajaran"><br><br>
         <button type="submit">Tambah</button>
         <a href="data_guru.php" class="batal-button">Batal</a>
-        <!-- <a href="data_guru.php">Batal</a> -->
     </form>
 </body>
 
