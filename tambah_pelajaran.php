@@ -5,19 +5,18 @@ include 'cek_auth.php';
 // include 'sidebar.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nama = $_POST['Nama'];
-    $email = $_POST['Email'];
-    $telepon = $_POST['Telepon'];
-    $alamat = $_POST['Alamat'];
-    $tanggal_lahir = $_POST['Tanggal_lahir'];
-    $jenis_kelamin = $_POST['Jenis_kelamin'];
-    $mata_pelajaran = $_POST['Mata_pelajaran'];
+    $nama = $_POST['nama_pelajaran'];
+    $kelas = $_POST['kelas'];
+    $kode_pelajaran = $_POST['kode_pelajaran'];
+    $jam_pelajaran = $_POST['jam_pelajaran'];
+    $tingkat_pendidikan = $_POST['tingkat_pendidikan'];
+    $guru_pengajar = $_POST['guru_pengajar'];
 
-    $sql = "INSERT INTO guru (Nama, Email, Telepon, Alamat, Tanggal_lahir, Jenis_kelamin, Mata_pelajaran)
-            VALUES ('$nama', '$email', '$telepon', '$alamat', '$tanggal_lahir', '$jenis_kelamin', '$mata_pelajaran')";
+    $sql = "INSERT INTO pelajaran (nama_pelajaran, kelas, kode_pelajaran, jam_pelajaran, tingkat_pendidikan, guru_pengajar)
+            VALUES ('$nama', '$kelas', '$kode_pelajaran', '$jam_pelajaran', '$tingkat_pendidikan', '$guru_pengajar')";
 
     if ($koneksi->query($sql) === TRUE) {
-        header('Location: data_guru.php');
+        header('Location: data_pelajaran.php');
         exit();
     } else {
         echo "Error: " . $koneksi->error;
@@ -41,7 +40,7 @@ if ($_SESSION['role'] !== 'admin') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data Guru</title>
+    <title>Tambah Data Pelajaran</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -158,26 +157,22 @@ if ($_SESSION['role'] !== 'admin') {
 
     <h1>Tambah Data Guru</h1>
 
-    <form method="POST" action="tambah_guru.php">
-        <label>Nama:</label><br>
-        <input type="text" name="Nama" required><br>
-        <label>Email:</label><br>
-        <input type="email" name="Email" required><br>
-        <label>Telepon:</label><br>
-        <input type="text" name="Telepon"><br>
-        <label>Alamat:</label><br>
-        <textarea name="Alamat"></textarea><br>
-        <label>Tanggal Lahir:</label><br>
-        <input type="date" name="Tanggal_lahir"><br>
-        <label>Jenis Kelamin:</label><br>
-        <select name="Jenis_kelamin" required>
-            <option value="Laki-laki">Laki-laki</option>
-            <option value="Perempuan">Perempuan</option>
-        </select><br>
-        <label>Mata Pelajaran:</label><br>
-        <input type="text" name="Mata_pelajaran"><br><br>
+    <form method="POST" action="tambah_pelajaran.php">
+        <label>Nama Pelajaran:</label><br>
+        <input type="text" name="nama_pelajaran" required><br>
+        <label>Kelas:</label><br>
+        <input type="text" name="kelas" required><br>
+        <label>Kode Pelajaran:</label><br>
+        <input type="text" name="kode_pelajaran"><br>
+        <label>Jam Pelajaran:</label><br>
+        <input type="text" name="jam_pelajaran" required><br>
+        <!-- <textarea name="Alamat"></textarea><br> -->
+        <label>Tingkat Pendidikan:</label><br>
+        <input type="text" name="tingkat_pendidikan"><br>
+        <label>Guru Pengajar:</label><br>
+        <input type="text" name="guru_pengajar"><br><br>
         <button type="submit">Tambah</button>
-        <a href="data_guru.php" class="batal-button">Batal</a>
+        <a href="data_pelajaran.php" class="batal-button">Batal</a>
     </form>
 </body>
 

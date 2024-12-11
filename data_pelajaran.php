@@ -8,7 +8,7 @@ include 'sidebar.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Guru</title>
+    <title>Data Pelajaran</title>
 
     <!-- CDN untuk DataTables -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
@@ -139,88 +139,86 @@ include 'sidebar.php';
 </head>
 
 <body>
-<div class="container mt-3">
-    <h2 class="text-center">Data Guru</h2>
-    <a href="tambah_guru.php" class="btn-primary mb-3">+ Tambah Data Guru</a>
-    <div class="table-wrapper mt-4">
-        <?php
-        // var_dump($_SESSION);
-        // exit; 
-        if ($_SESSION['role'] !== 'admin') {
-            echo "Anda tidak berhak mengakses halaman ini.";
-            exit;
-        }
-        ?>
-        <!-- Tabel data guru -->
-        <table id="dataGuru" class="display" style="width:100%">
-            <thead>
-            <tr>
-                <th>No</th>
-                <th>Nama</th>
-                <th>Email</th>
-                <th>Telepon</th>
-                <th>Alamat</th>
-                <th>Tanggal Lahir</th>
-                <th>Jenis Kelamin</th>
-                <th>Mata Pelajaran</th>
-                <th>Action</th>
-            </tr>
-            </thead>
-            <tbody>
+    <div class="container mt-3">
+        <h2 class="text-center">Data Pelajaran</h2>
+        <a href="tambah_pelajaran.php" class="btn-primary mb-3">+ Tambah Data Pelajaran</a>
+        <div class="table-wrapper mt-4">
             <?php
-            // Koneksi ke database
-            require_once 'config.php';
+            // var_dump($_SESSION);
+            // exit; 
+            if ($_SESSION['role'] !== 'admin') {
+                echo "Anda tidak berhak mengakses halaman ini.";
+                exit;
+            }
+            ?>
+            <!-- Tabel data guru -->
+            <table id="dataGuru" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Pelajaran</th>
+                        <th>Kelas</th>
+                        <th>Kode Pelajaran</th>
+                        <th>Jam Pelajaran</th>
+                        <th>Tingkat Pendidikan</th>
+                        <th>Guru Pengajar</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    // Koneksi ke database
+                    require_once 'config.php';
 
-            // Query untuk mengambil semua data dari tabel guru
-            $sql = "SELECT * FROM guru";
-            $result = $koneksi->query($sql);
+                    // Query untuk mengambil semua data dari tabel guru
+                    $sql = "SELECT * FROM pelajaran";
+                    $result = $koneksi->query($sql);
 
-            if ($result->num_rows > 0) {
-                $no = 1;
-                while ($row = $result->fetch_assoc()) {
-                    echo "<tr>
+                    if ($result->num_rows > 0) {
+                        $no = 1;
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>
                                 <td>{$no}</td>
-                                <td>" . htmlspecialchars($row['Nama']) . "</td>
-                                <td>" . htmlspecialchars($row['Email']) . "</td>
-                                <td>" . htmlspecialchars($row['Telepon']) . "</td>
-                                <td>" . htmlspecialchars($row['Alamat']) . "</td>
-                                <td>" . htmlspecialchars($row['Tanggal_lahir']) . "</td>
-                                <td>" . htmlspecialchars($row['Jenis_kelamin']) . "</td>
-                                <td>" . htmlspecialchars($row['Mata_pelajaran']) . "</td>
+                                <td>" . htmlspecialchars($row['nama_pelajaran']) . "</td>
+                                <td>" . htmlspecialchars($row['kelas']) . "</td>
+                                <td>" . htmlspecialchars($row['kode_pelajaran']) . "</td>
+                                <td>" . htmlspecialchars($row['jam_pelajaran']) . "</td>
+                                <td>" . htmlspecialchars($row['tingkat_pendidikan']) . "</td>
+                                <td>" . htmlspecialchars($row['guru_pengajar']) . "</td>
                                 <td>
                                     <div class='btn-group'>
-                                        <a href='update_guru.php?id={$row['Id']}' class='btn-success btn-sm'>Edit</a>
-                                        <a href='delete_guru.php?id={$row['Id']}' class='btn-danger btn-sm' onclick=\"return confirm('Yakin ingin menghapus?');\">Hapus</a>
+                                        <a href='update_pelajaran.php?id={$row['id']}' class='btn-success btn-sm'>Edit</a>
+                                        <a href='delete_pelajaran.php?id={$row['id']}' class='btn-danger btn-sm' onclick=\"return confirm('Yakin ingin menghapus?');\">Hapus</a>
                                     </div>
                                 </td>
                             </tr>";
-                    $no++;
-                }
-            } else {
-                echo "<tr><td colspan='9'>Tidak ada data guru.</td></tr>";
-            }
-            ?>
-            </tbody>
-        </table>
+                            $no++;
+                        }
+                    } else {
+                        echo "<tr><td colspan='9'>Tidak ada data pelajaran.</td></tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 
-<script>
-    $(document).ready(function () {
-        // Inisialisasi DataTables
-        $('#dataGuru').DataTable({
-            paging: true,          // Aktifkan pagination
-            searching: true,       // Aktifkan pencarian
-            scrollCollapse: true,  // Collapse jika data sedikit
-            language: {
-                search: "Cari Guru:", // Ubah label pencarian
-                lengthMenu: "Tampilkan _MENU_ data",
-                info: "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
-                infoFiltered: "(difilter dari _MAX_ total data)"
-            }
+    <script>
+        $(document).ready(function () {
+            // Inisialisasi DataTables
+            $('#dataGuru').DataTable({
+                paging: true,          // Aktifkan pagination
+                searching: true,       // Aktifkan pencarian
+                scrollCollapse: true,  // Collapse jika data sedikit
+                language: {
+                    search: "Cari Pelajaran:", // Ubah label pencarian
+                    lengthMenu: "Tampilkan _MENU_ data",
+                    info: "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
+                    infoFiltered: "(difilter dari _MAX_ total data)"
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>

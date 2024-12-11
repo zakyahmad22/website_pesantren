@@ -68,7 +68,7 @@ include 'navbar.php';
         <div class="container ">
             <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Haul Almagfurlah
             </h2>
-            <p>Haul Almagfurlah merujuk pada peringatan atau perayaan yang diadakan untuk mengenang dan merayakan
+            <p style="text-align: justify;">Haul Almagfurlah merujuk pada peringatan atau perayaan yang diadakan untuk mengenang dan merayakan
                 kewafatan (wafat)
                 seseorang yang dianggap sebagai tokoh agama atau tokoh yang memiliki jasa besar dalam menyebarkan ajaran
                 agama Islam.
@@ -76,13 +76,13 @@ include 'navbar.php';
                 ampunan."</p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Ziarah Kubur:
             </h3>
-            <p>Haul Almagfurlah sering dimulai dengan kegiatan ziarah kubur ke makam tokoh yang dihormati. Ziarah ini
+            <p style="text-align: justify;">Haul Almagfurlah sering dimulai dengan kegiatan ziarah kubur ke makam tokoh yang dihormati. Ziarah ini
                 dianggap sebagai
                 bentuk penghormatan dan doa untuk orang yang telah wafat.
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Majelis Ilmu:
             </h3>
-            <p>Acara ini biasanya mencakup majelis ilmu, di mana para ulama atau tokoh agama memberikan ceramah,
+            <p style="text-align: justify;">Acara ini biasanya mencakup majelis ilmu, di mana para ulama atau tokoh agama memberikan ceramah,
                 tazkirah
                 (pengingatan), atau tausyiah (nasehat) kepada para peserta. Ceramah tersebut dapat berisi pemahaman
                 tentang ajaran
@@ -90,7 +90,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Pembacaan Surah Yasin dan Doa:
             </h3>
-            <p>Pembacaan Surah Yasin, surah dalam Al-Qur'an yang sering dikaitkan dengan doa untuk orang yang telah
+            <p style="text-align: justify;">Pembacaan Surah Yasin, surah dalam Al-Qur'an yang sering dikaitkan dengan doa untuk orang yang telah
                 meninggal,
                 seringkali menjadi bagian dari acara Haul Almagfurlah. Doa-doa khusus untuk ampunan dan keberkahan juga
                 sering
@@ -98,25 +98,25 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Dzikir dan Shalawat:
             </h3>
-            <p>Kegiatan dzikir (mengingat Allah) dan shalawat (memohon rahmat kepada Nabi Muhammad) umumnya dilakukan
+            <p style="text-align: justify;">Kegiatan dzikir (mengingat Allah) dan shalawat (memohon rahmat kepada Nabi Muhammad) umumnya dilakukan
                 untuk memperkuat
                 suasana keagamaan dan spiritualitas di acara Haul Almagfurlah.
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Kegiatan Sosial:
             </h3>
-            <p>Selain kegiatan keagamaan, Haul Almagfurlah juga bisa mencakup kegiatan sosial seperti pemberian sedekah,
+            <p style="text-align: justify;">Selain kegiatan keagamaan, Haul Almagfurlah juga bisa mencakup kegiatan sosial seperti pemberian sedekah,
                 pembagian
                 makanan kepada fakir miskin, atau penggalangan dana untuk amal.
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Penghargaan dan Penghormatan:
             </h3>
-            <p>Acara ini sering dijadikan kesempatan untuk memberikan penghargaan dan penghormatan kepada para ulama
+            <p style="text-align: justify;">Acara ini sering dijadikan kesempatan untuk memberikan penghargaan dan penghormatan kepada para ulama
                 atau keturunan
                 tokoh yang dihormati. Ini bisa mencakup pemberian gelar kehormatan atau pemberian kenang-kenangan.
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Partisipasi Massal:
             </h3>
-            <p>Haul Almagfurlah biasanya melibatkan partisipasi massal dari umat Islam, termasuk para santri, masyarakat
+            <p style="text-align: justify;">Haul Almagfurlah biasanya melibatkan partisipasi massal dari umat Islam, termasuk para santri, masyarakat
                 setempat, dan
                 jamaah yang menghormati tokoh yang diwafatkan.
                 Penting untuk dicatat bahwa praktik-praktik Haul Almagfurlah dapat bervariasi di berbagai wilayah dan
@@ -147,7 +147,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.

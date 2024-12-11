@@ -5,19 +5,19 @@ include 'cek_auth.php';
 // include 'sidebar.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nama = $_POST['Nama'];
-    $email = $_POST['Email'];
-    $telepon = $_POST['Telepon'];
-    $alamat = $_POST['Alamat'];
-    $tanggal_lahir = $_POST['Tanggal_lahir'];
-    $jenis_kelamin = $_POST['Jenis_kelamin'];
-    $mata_pelajaran = $_POST['Mata_pelajaran'];
+    $nama = $_POST['nama_ekstrakulikuler'];
+    $deskripsi = $_POST['deskripsi'];
+    $jadwal_hari = $_POST['jadwal_hari'];
+    $jadwal_waktu = $_POST['jadwal_waktu'];
+    $pembimbing = $_POST['pembimbing'];
 
-    $sql = "INSERT INTO guru (Nama, Email, Telepon, Alamat, Tanggal_lahir, Jenis_kelamin, Mata_pelajaran)
-            VALUES ('$nama', '$email', '$telepon', '$alamat', '$tanggal_lahir', '$jenis_kelamin', '$mata_pelajaran')";
+    var_dump($_POST);
+
+    $sql = "INSERT INTO ekstrakulikuler (nama_ekstrakulikuler, deskripsi, jadwal_hari, jadwal_waktu, pembimbing)
+            VALUES ('$nama', '$deskripsi', '$jadwal_hari', '$jadwal_waktu', '$pembimbing')";
 
     if ($koneksi->query($sql) === TRUE) {
-        header('Location: data_guru.php');
+        header('Location: ekstrakulikuler.php');
         exit();
     } else {
         echo "Error: " . $koneksi->error;
@@ -41,7 +41,7 @@ if ($_SESSION['role'] !== 'admin') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data Guru</title>
+    <title>Tambah Data Ekstrakulikuler</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -156,28 +156,24 @@ if ($_SESSION['role'] !== 'admin') {
         }
     </style>
 
-    <h1>Tambah Data Guru</h1>
+    <h1>Tambah Data Ekstrakulikuler</h1>
 
-    <form method="POST" action="tambah_guru.php">
-        <label>Nama:</label><br>
-        <input type="text" name="Nama" required><br>
-        <label>Email:</label><br>
-        <input type="email" name="Email" required><br>
-        <label>Telepon:</label><br>
-        <input type="text" name="Telepon"><br>
-        <label>Alamat:</label><br>
-        <textarea name="Alamat"></textarea><br>
-        <label>Tanggal Lahir:</label><br>
-        <input type="date" name="Tanggal_lahir"><br>
-        <label>Jenis Kelamin:</label><br>
-        <select name="Jenis_kelamin" required>
-            <option value="Laki-laki">Laki-laki</option>
-            <option value="Perempuan">Perempuan</option>
-        </select><br>
-        <label>Mata Pelajaran:</label><br>
-        <input type="text" name="Mata_pelajaran"><br><br>
+    <form method="POST" action="tambah_ekstra.php">
+        <label>Nama Ekstrakulikuler:</label><br>
+        <input type="text" name="nama_ekstrakulikuler" required><br>
+        <!-- <label>Deskripsi:</label><br>
+        <input type="text" name="deskripsi" required><br> -->
+        <label for="deskripsi">Deskripsi:</label><br>
+        <textarea id="deskripsi" name="deskripsi" rows="4" cols="50" placeholder=""
+            required></textarea><br>
+        <label>Jadwal Hari:</label><br>
+        <input type="text" name="jadwal_hari"><br>
+        <label>Jadwal Waktu:</label><br>
+        <input type="text" name="jadwal_waktu" required><br>
+        <label>Pembimbing:</label><br>
+        <input type="text" name="pembimbing"><br>
         <button type="submit">Tambah</button>
-        <a href="data_guru.php" class="batal-button">Batal</a>
+        <a href="ekstrakulikuler.php" class="batal-button">Batal</a>
     </form>
 </body>
 

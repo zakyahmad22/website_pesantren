@@ -124,7 +124,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <input type="text" name="Email" class="form-control" value="<?php echo $row['Email']; ?>" required>
             </div>
 
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-success">Update</button>
+            <button type="submit" class="btn btn-danger">Batal</button>
         </form>
     </div>
 </body>

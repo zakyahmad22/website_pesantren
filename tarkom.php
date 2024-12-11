@@ -66,14 +66,14 @@ include 'navbar.php';
         <div class="container ">
             <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Tari Kombinasi
             </h2>
-            <p>Tari tradisional adalah bentuk seni pertunjukan yang muncul dari warisan budaya suatu masyarakat
+            <p style="text-align: justify;">Tari tradisional adalah bentuk seni pertunjukan yang muncul dari warisan budaya suatu masyarakat
                 tertentu. Tarian ini
                 sering kali menggambarkan nilai-nilai, cerita, ritual, dan kepercayaan yang melekat dalam budaya
                 tersebut. Berikut
                 adalah beberapa elemen penting yang umumnya terkandung dalam tari tradisional.</p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Tari Tradisional
             </h3>
-            <p>Biasanya, gerakan dari tari tradisional Indonesia, seperti tari Jawa, Bali, atau Sumatera, dimasukkan ke
+            <p style="text-align: justify;">Biasanya, gerakan dari tari tradisional Indonesia, seperti tari Jawa, Bali, atau Sumatera, dimasukkan ke
                 dalam kombinasi
                 ini. Tari tradisional sering kali mengutamakan keselarasan antara gerakan tubuh dengan musik, serta
                 penguasaan teknik
@@ -83,7 +83,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Tari Modern
             </h3>
-            <p>Tari modern menambahkan unsur kebebasan ekspresi, dengan lebih banyak mengutamakan kreativitas dan
+            <p style="text-align: justify;">Tari modern menambahkan unsur kebebasan ekspresi, dengan lebih banyak mengutamakan kreativitas dan
                 improvisasi. Gerakan
                 tari modern yang lebih bebas dan enerjik, serta dipengaruhi oleh berbagai gaya tari kontemporer, sering
                 digabungkan
@@ -93,7 +93,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Elemen Musik dan Kostum
             </h3>
-            <p>Musik yang digunakan dalam tari kombinasi biasanya memadukan instrumen tradisional dan modern,
+            <p style="text-align: justify;">Musik yang digunakan dalam tari kombinasi biasanya memadukan instrumen tradisional dan modern,
                 menciptakan perpaduan
                 yang menarik antara keduanya. Misalnya, gamelan Bali atau Jawa dapat dipadukan dengan musik pop atau
                 musik kontemporer.
@@ -103,7 +103,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Gerakan Koordinasi dan Sinkronisasi
             </h3>
-            <p>Salah satu fungsi utama perpustakaan adalah untuk memperluas wawasan santri. Melalui berbagai koleksi
+            <p style="text-align: justify;">Salah satu fungsi utama perpustakaan adalah untuk memperluas wawasan santri. Melalui berbagai koleksi
                 buku, santri dapat
                 menggali lebih dalam tentang berbagai topik yang mungkin tidak secara langsung diajarkan di kelas.
                 Dengan adanya
@@ -114,7 +114,7 @@ include 'navbar.php';
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Peningkatan Keterampilan dan
                 Kemampuan Santri
             </h3>
-            <p>Perpustakaan juga berfungsi untuk membantu santri mengasah keterampilan dan kemampuan mereka dalam
+            <p style="text-align: justify;">Perpustakaan juga berfungsi untuk membantu santri mengasah keterampilan dan kemampuan mereka dalam
                 berbagai bidang.
                 Selain literasi membaca, perpustakaan sering kali mengadakan berbagai kegiatan, seperti kajian ilmiah,
                 bedah buku, atau
@@ -124,7 +124,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Mendukung Proses Pembelajaran Mandiri
             </h3>
-            <p>Perpustakaan di Pondok Modern menyediakan fasilitas yang memungkinkan santri untuk belajar secara
+            <p style="text-align: justify;">Perpustakaan di Pondok Modern menyediakan fasilitas yang memungkinkan santri untuk belajar secara
                 mandiri. Buku-buku
                 yang tersedia memungkinkan santri untuk menggali materi lebih dalam di luar waktu pengajaran formal.
                 Dengan adanya akses
@@ -134,7 +134,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Tempat Interaksi dan Diskusi
             </h3>
-            <p>Sebagai sebuah tarian kelompok, tari kombinasi mengutamakan kerja sama antara para penari.
+            <p style="text-align: justify;">Sebagai sebuah tarian kelompok, tari kombinasi mengutamakan kerja sama antara para penari.
                 Gerakan-gerakan yang
                 dilakukan harus sinkron dan terkoordinasi dengan baik antara satu penari dengan penari lainnya, sehingga
                 menghasilkan
@@ -164,7 +164,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.

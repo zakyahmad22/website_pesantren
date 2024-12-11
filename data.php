@@ -1,5 +1,6 @@
 <?php
 include 'sidebar.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -150,7 +151,7 @@ include 'sidebar.php';
                                 <td>{$row['Email']}</td>
                                 <td>
                                     <a href='edit_santri.php?id={$row['Id']}' class='btn btn-success btn-sm'>Edit</a>
-                                    <a href='delete_santri.php?Id={$row['Id']}' class='btn btn-danger btn-sm'>Hapus</a>
+                                    <a href='delete_santri.php?Id={$row['Id']}' class='btn btn-danger btn-sm' onclick=\"return confirm('Yakin ingin menghapus?');\">Hapus</a>
                                 </td>
                                 </tr>";
                         $no++;

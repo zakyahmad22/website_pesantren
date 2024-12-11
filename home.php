@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+
 ?>
 
 
@@ -112,7 +113,7 @@ include 'navbar.php';
             <h1 class="display-7 font-family-sans-serif fw-bold">Pondok Pesantren</h1>
             <h2 class="display-5 font-family-sans-serif fw-bold text-light">MODERN AL MUFLIHIN</h2>
             <h3 class="display-6 font-family-sans-serif fw-bold pb-3">Cirebon</h3>
-            <a href="tambah_santri.php">
+            <a href="form.php">
                 <button type="button" class="btn btn-success text-light">Daftar Sekarang</button>
             </a>
         </div>
@@ -131,205 +132,194 @@ include 'navbar.php';
 
     <!-- <nav class="navbar bg-warning pb-3"> -->
 
-    <div class="container">
-        <a class="navbar-brand" href="profile"></a>
-    </div>
-    </nav>
-    <div class="container mt-4 text-left">
-        <h4 class="display-6 font-family-sans-serif fw-bold pt-5" id="profile">Penerimaan</h4>
-        <img src="image/foto8.jpg" alt="foto8" width="400" height="250" class="rounded-3 float-end
-            ">
-        <h5 class="display-6 font-family-sans-serif fw-bold" id="profile">Santri Baru Tahun 2024</h5>
-        <div class="row pt-2">
-            <div class="col-md-8">
+    <div class="container mt-5 text-left">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h4 class="display-6 font-family-sans-serif fw-bold pt-5" id="profile">Penerimaan</h4>
+                <h5 class="display-6 font-family-sans-serif fw-bold">Santri Baru Tahun 2024</h5>
                 <p style="text-align: justify;">Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan
-                    Gontor yang
-                    menyelenggarakan pendidikan untuk
-                    megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
-                    kecerdasan, intelektual,
-                    kematangan emosi, dan sikap yang taat kepada Allah SWT.</p>
+                    Gontor yang menyelenggarakan pendidikan untuk mengembangkan seluruh potensi para santri secara
+                    menyeluruh meliputi pembinaan skill, kecerdasan, intelektual, kematangan emosi, dan sikap yang taat
+                    kepada Allah SWT.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="image/foto8.jpg" alt="foto8" width="400" height="250" class="rounded-3 class=" img-fluid
+                    rounded-3">
             </div>
         </div>
-        <!-- rounded membuat tombol button dengan border-radius atau tepi melengkung -->
-        <!-- rounded-circle untuk Membuat tombol menjadi lingkaran -->
-        <!-- fs untuk mengatur ukuran font, semakin kecil angkanya maka ukuran nya semakin besar -->
-        <!-- fx untuk mengatur padding horizontal kiri dan kanan -->
-        <!-- me menambahkan margin di sebelah kanan kanan tombol pertama -->
-        <!-- ms menambahkan margin di sebelah kiri kiri tombol kedua -->
-        <div class="container-fluid profile pt-4 pb-4">
-            <a href="profile.php">
-                <button type="button"
-                    class="btn btn-success rounded-4 fs-6 px-5 text-light bg-text-light me-4">Profile</button>
-            </a>
-            <a href="profile">
+
+        <div class="container-fluid pt-4 pb-4">
+            <div class="d-flex flex-wrap justify-content-start">
+                <a href="profile.php" class="me-3">
+                    <button type="button" class="btn btn-success rounded-4 fs-6 px-5 text-light">Profile</button>
+                </a>
                 <a href="pendaftaran.php">
-                    <button type="button"
-                        class="btn btn-outline-success border-1 rounded-4 fs-6 px-4 bg-text-light">Info
+                    <button type="button" class="btn btn-outline-success border-1 rounded-4 fs-6 px-4">Info
                         Pendaftaran</button>
                 </a>
-            </a>
-            <!-- <hr class="my-4" style="border: 2px solid #333;"> -->
-        </div>
-        <!-- bagian penerimaan akhir -->
-
-        <!-- profile awal -->
-
-        <div class="container-fluid profile pt-5 pb-5">
-            <div class="container text-center">
-                <h1 class="display-6 font-family-sans-serif fw-bold">Falsafah Pondok</h1>
-                <p>Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
-                    menyelenggarakan pendidikan untuk
-                    megembangkan seluruh poetensi para santri secara menyeluruh.</p>
-                <div class="row pt-4">
-                    <div class="col-md-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z" />
-                        </svg>
-                        <h2 class="display-7 mt-3 font-family-sans-serif fw-bold">Panca Jiwa</h2>
-                        <p>Seluruh kehidupan di Pondok Modern Al Muflihin
-                            didasarkan pada nilai-nilai kehidupan dalam
-                            Panca Jiwa.</p>
-                        <a href="pancajiwa.php">
-                            <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z" />
-                        </svg>
-                        <h2 class="display-7 mt-3 font-family-sans-serif fw-bold">Motto Pondok</h2>
-                        <p>Pendidikan Pondok Modern Al Muflihin
-                            menekankan pada pembentukan pribadi mukmin
-                            muslim.
-                        </p>
-                        <a href="mottopondok.php">
-                            <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                            class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
-                        </svg>
-                        <h2 class="display-7 mt-3 font-family-sans-serif fw-bold">Visi & Misi</h2>
-                        <p>Panca Jangka merupakan program kerja Pondok untuk
-                            mewujudkan upaya pengembangan dan pemajuan.</p>
-                        <a href="visimisi.php">
-                            <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
-        <hr class="my-4" style="border: 2px solid #333;">
+    </div>
+    <!-- bagian penerimaan akhir -->
 
-        <!-- profile akhir -->
+    <!-- profile awal -->
 
-        <!-- activity awal -->
-
-        <div class="container-fluid pt-4 pb-5">
-            <div class="container text-center">
-                <h2 class="display-6 font-family-sans-serif fw-bold" id="activity">Pusat Informasi</h2>
-                <p>Pendidikan Pondok Modern Al Muflihin
-                    menekankan pada pembentukan pribadi mukmin
-                    muslim.</p>
-                <div class="row pt-4 gx-4 gy-4">
-                    <div class="col-md-4">
-                        <div class="card crop-img" style="width: 18rem;">
-                            <img src="image/ujian4.jpg" class="card-img-top" alt="foto1" width="200" height="200">
-                            <div class="card-body">
-                                <h5 class="card-title">Pendaftaran & Ujian</h5>
-                                <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
-                                    Al Muflihin</p>
-                                <a href="ujian.php" class="btn btn-success text-light">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card crop-img" style="width: 18rem;">
-                            <img src="image/foto6.jpg" class="card-img-top" alt="foto1" width="200" height="200">
-                            <div class="card-body">
-                                <h5 class="card-title">SMP Al Muflihin</h5>
-                                <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
-                                    Al Muflihin</p>
-                                <a href="smp.php" class="btn btn-success text-light">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card crop-img" style="width: 18rem;">
-                            <img src="image/foto11.JPG" class="card-img-top" alt="foto11" width="200" height="200">
-                            <div class="card-body">
-                                <h5 class="card-title">MA Al Muflihin</h5>
-                                <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
-                                    Al Muflihin</p>
-                                <a href="ma.php" class="btn btn-success text-light">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container-fluid profile pt-5 pb-5">
+        <div class="container text-center">
+            <h1 class="display-6 font-family-sans-serif fw-bold">Falsafah Pondok</h1>
+            <p>Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
+                menyelenggarakan pendidikan untuk
+                megembangkan seluruh poetensi para santri secara menyeluruh.</p>
+            <div class="row pt-4">
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z" />
+                    </svg>
+                    <h2 class="display-7 mt-3 font-family-sans-serif fw-bold">Panca Jiwa</h2>
+                    <p>Seluruh kehidupan di Pondok Modern Al Muflihin
+                        didasarkan pada nilai-nilai kehidupan dalam
+                        Panca Jiwa.</p>
+                    <a href="pancajiwa.php">
+                        <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
+                    </a>
                 </div>
-            </div>
-        </div>
-        <!-- activity akhir -->
-
-        <!-- tentang awal -->
-
-        <div class="container-fluid pt-4 pb-5">
-            <div class="container">
-                <h2 class="display-6 text-center font-family-sans-serif fw-bold" id="about">About</h2>
-                <p class="text-center">
-                    Pondok Pesantren Modern Al Muflihin Gebang Ilir, Gebang, Cirebon, Jawa Barat
-                </p>
-                <div class="clearfix pt-5">
-                    <img src="image/foto9.JPG" class="col-md-6 float-md-end mb-3 crop-img rounded-4" width="300"
-                        height="300">
-                    <div class="col-md-5">
-                        <p style="text-align: justify;">
-                            Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
-                            menyelenggarakan pendidikan untuk
-                            megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
-                            keserdasan, intelektual,
-                            kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren
-                            Modern
-                            dengan manhaj Darunnajah dan Gontor yang
-                            menyelenggarakan pendidikan untuk
-                            megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
-                            keserdasan, intelektual,
-                            kematangan emosi, dan sikap yang taat kepada Allah SWT.
-                            Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
-                            menyelenggarakan pendidikan untuk
-                            megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
-                            keserdasan, intelektual,
-                            kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren
-                            Modern
-                        </p>
-                    </div>
-                    <a href="profile">
-                        <a
-                            href="https://linktr.ee/PonpesAlMuflihin?fbclid=PAZXh0bgNhZW0CMTEAAabDU66tspVrauWdqlMfGioZyxTRvANI6OMDwmlOztI1cBWVb8tOVZA1Tmg_aem_LPNlcE5n85TAWALiMnfc5w">
-                            <button type="button" class="btn btn-success border-1 rounded-4 fs-6 px-4 text-light">Social
-                                Media</button>
-                        </a>
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z" />
+                    </svg>
+                    <h2 class="display-7 mt-3 font-family-sans-serif fw-bold">Motto Pondok</h2>
+                    <p>Pendidikan Pondok Modern Al Muflihin
+                        menekankan pada pembentukan pribadi mukmin
+                        muslim.
+                    </p>
+                    <a href="mottopondok.php">
+                        <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                    </svg>
+                    <h2 class="display-7 mt-3 font-family-sans-serif fw-bold">Visi & Misi</h2>
+                    <p>Panca Jangka merupakan program kerja Pondok untuk
+                        mewujudkan upaya pengembangan dan pemajuan.</p>
+                    <a href="visimisi.php">
+                        <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
                     </a>
                 </div>
             </div>
         </div>
-
-        <!-- footer awal -->
-
-        <footer class="bg-light text-white text-center py-4">
-            <footer id="sticky-footer">
-                <div class="container text-center">
-                    <p class="mb-0"></p>
-            </footer>
     </div>
+    <!-- <hr class="my-4" style="border: 2px solid #333;"> -->
+
+    <!-- profile akhir -->
+
+    <!-- activity awal -->
+
+    <div class="container-fluid pt-5 pb-5">
+        <div class="container text-center">
+            <h2 class="display-6 font-family-sans-serif fw-bold" id="activity">Pusat Informasi</h2>
+            <p>Pendidikan Pondok Modern Al Muflihin
+                menekankan pada pembentukan pribadi mukmin
+                muslim.</p>
+            <div class="row pt-4 gx-4 gy-4">
+                <div class="col-md-4">
+                    <div class="card crop-img" style="width: 18rem;">
+                        <img src="image/ujian4.jpg" class="card-img-top" alt="foto1" width="200" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Pendaftaran & Ujian</h5>
+                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
+                                Al Muflihin</p>
+                            <a href="ujian.php" class="btn btn-success text-light">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card crop-img" style="width: 18rem;">
+                        <img src="image/foto6.jpg" class="card-img-top" alt="foto1" width="200" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">SMP Al Muflihin</h5>
+                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
+                                Al Muflihin</p>
+                            <a href="smp.php" class="btn btn-success text-light">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card crop-img" style="width: 18rem;">
+                        <img src="image/foto11.JPG" class="card-img-top" alt="foto11" width="200" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">MA Al Muflihin</h5>
+                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
+                                Al Muflihin</p>
+                            <a href="ma.php" class="btn btn-success text-light">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- activity akhir -->
+
+    <!-- tentang awal -->
+
+    <div class="container-fluid pt-4 pb-5">
+        <div class="container">
+            <h2 class="display-6 text-center font-family-sans-serif fw-bold" id="about">About</h2>
+            <p class="text-center">
+                Pondok Pesantren Modern Al Muflihin Gebang Ilir, Gebang, Cirebon, Jawa Barat
+            </p>
+            <div class="clearfix pt-5">
+                <img src="image/foto9.JPG" class="col-md-6 float-md-end mb-3 crop-img rounded-4" width="300"
+                    height="300">
+                <div class="col-md-5">
+                    <p style="text-align: justify;">
+                        Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
+                        menyelenggarakan pendidikan untuk
+                        megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
+                        keserdasan, intelektual,
+                        kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren
+                        Modern
+                        dengan manhaj Darunnajah dan Gontor yang
+                        menyelenggarakan pendidikan untuk
+                        megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
+                        keserdasan, intelektual,
+                        kematangan emosi, dan sikap yang taat kepada Allah SWT.
+                        Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
+                        menyelenggarakan pendidikan untuk
+                        megembangkan seluruh poetensi para santri secara menyeluruh meliputi pembinaan skill,
+                        keserdasan, intelektual,
+                        kematangan emosi, dan sikap yang taat kepada Allah SWT. Al Muflihin adalah Pondok Pesantren
+                        Modern
+                    </p>
+                </div>
+                <a href="profile">
+                    <a
+                        href="https://linktr.ee/PonpesAlMuflihin?fbclid=PAZXh0bgNhZW0CMTEAAabDU66tspVrauWdqlMfGioZyxTRvANI6OMDwmlOztI1cBWVb8tOVZA1Tmg_aem_LPNlcE5n85TAWALiMnfc5w">
+                        <button type="button" class="btn btn-success border-1 rounded-4 fs-6 px-4 text-light">Social
+                            Media</button>
+                    </a>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer awal -->
+
+    <footer class="bg-light text-white text-center py-4">
+        <footer id="sticky-footer">
+            <div class="container text-center">
+                <p class="mb-0"></p>
+        </footer>
+        </div>
     </footer>
     <footer class="bg-success text-light py-5">
         <div class="container">
@@ -338,7 +328,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.

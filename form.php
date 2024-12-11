@@ -1,8 +1,7 @@
 <?php
 // Koneksi ke database
 include 'config.php';
-include 'cek_auth.php';
-// include 'sidebar.php';
+// include 'cek_auth.php';
 
 // Cek apakah form telah di-submit
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -18,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($result) {
         echo "<script>
                 alert('Data berhasil ditambahkan!');
-                window.location.href = 'data.php';
+                window.location.href = 'home.php';
                 </script>";
     } else {
         echo "<script>
@@ -74,8 +73,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         .form-actions {
             display: flex;
-            justify-content: flex-start; /* Tombol di sisi kiri */
-            gap: 10px; /* Jarak antara tombol */
+            justify-content: flex-start;
+            /* Tombol di sisi kiri */
+            gap: 10px;
+            /* Jarak antara tombol */
         }
 
         .form-label {
@@ -130,8 +131,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </style>
 
     <div class="container mt-3">
-        <h2 class="text-center fw-bold fs-3">Tambah Data Santri</h2>
-        <form method="POST" action="tambah_santri.php">
+        <h2 class="text-center fw-bold fs-3">Formulir Pendaftaran Santri</h2>
+        <form method="POST" action="form.php">
             <div class="mb-3">
                 <label for="Id" class="form-label">Id Santri</label>
                 <input type="text" name="Id" id="Id" class="form-control" required>
@@ -150,7 +151,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="form-actions">
                 <button type="submit" class="btn btn-success">Simpan</button>
-                <a href="data.php" class="btn btn-danger">Batal</a>
+                <!-- <a href="home.php" class="btn btn-success">Simpan</a> -->
+                <a href="home.php" class="btn btn-danger">Batal</a>
             </div>
         </form>
     </div>

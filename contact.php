@@ -170,105 +170,13 @@ include 'navbar.php';
     <div class="container text-center mt-4 mb-4">
         <h2 class="font-family-sans-serif">Lokasi Kami</h2>
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.998469105525!2d106.7413542!3d-6.3209784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f8e88b32a651%3A0x2c64a045d4b9c5f8!2sPondok%20Modern%20Al-Muflihin!5e0!3m2!1sen!2sid!4v1635366286045!5m2!1sen!2sid"
-                width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.5498457306826!2d108.74044787367052!3d-6.8244712931733265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f0751d17aefcd%3A0x1c32cd5446d53dd9!2sPondok%20Pesantren%20Al%20Muflihin!5e0!3m2!1sid!2sid!4v1733900401006!5m2!1sid!2sid"
+                width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <!-- Tampilan peta akhir -->
-
-    <!-- kontak akhir -->
-
-    <!-- footer awal -->
-    <!-- <footer class="bg-light text-white text-center py-4">
-        <footer id="sticky-footer">
-            <div class="container text-center">
-                <p class="mb-0"></p>
-        </footer>
-        </div>
-    </footer>
-    <footer class="footer d-flex flex-column bg-success text-center text-light pt-5 pb-5">
-        <div class="container text-center text-md-left footer">
-            <div class="row text-center text-md-left">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h7 class="text-uppercase mb-4 fw-bold text-light text-start">Pondok Modern Al Muflihin</h7>
-                    <p class="pt-4 text-start">Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon Prov. Jawa
-                        Barat.</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h7 class="text-uppercase mb-3 fw-bold text-light">Menu</h7>
-                    <p class="pt-3">
-                        <a href="#home" class="text-light" style="text-decoration: none;">Home</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Program</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Profile</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Activity</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Contact</a>
-                    </p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h7 class="text-uppercase mb-3 fw-bold text-light">Program</h7>
-                    <p class="pt-3">
-                        <a href="#" class="text-light" style="text-decoration: none;">Pidato 3 Bahasa</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Jurnalistik</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Pramuka</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Praktek Mengajar</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Manasik Haji</a>
-                    </p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h7 class="text-uppercase mb-3 fw-bold text-light">Activity</h7>
-                    <p class="pt-3">
-                        <a href="#" class="text-light" style="text-decoration: none;">Home</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Program</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Profile</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Activity</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Contact</a>
-                    </p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h7 class="text-uppercase mb-3 fw-bold text-light">Contact</h7>
-                    <p class="pt-3">
-                        <a href="#" class="text-light" style="text-decoration: none;">Home</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-light" style="text-decoration: none;">Program</a>
-                    </p>
-                </div>
-                <hr class="my-4" style="border: 2px solid #fff">
-                <p class="mt-4 mb-0">@ Pondok Pesantren Modern Al Muflihin Tahun Ajaran 2024</p>
-            </div>
-        </div>
-    </footer> -->
-
-    <!-- <footer class="bg-light text-white text-center py-4">
-        <div class="container text-center">
-            <p class="mb-0">Footer Header Text Here</p>
-        </div>
-    </footer> -->
 
     <!-- footer awal -->
 
@@ -286,7 +194,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.

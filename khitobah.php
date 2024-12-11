@@ -67,13 +67,13 @@ include 'navbar.php';
             <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Proses Pembelajaran
                 Praktek Khitobah
             </h2>
-            <p>Di Pondok Modern Al Muflihin, kegiatan praktek khitobah dimulai dengan pembelajaran dasar tentang teknik
+            <p style="text-align: justify;">Di Pondok Modern Al Muflihin, kegiatan praktek khitobah dimulai dengan pembelajaran dasar tentang teknik
                 berbicara dan
                 cara penyampaian pidato yang baik. Santri akan mempelajari berbagai aspek penting dalam khitobah, antara
                 lain:</p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Struktur Pidato
             </h3>
-            <p>Para santri diajarkan tentang cara menyusun pidato yang baik, yang umumnya terdiri dari pembukaan, isi,
+            <p style="text-align: justify;">Para santri diajarkan tentang cara menyusun pidato yang baik, yang umumnya terdiri dari pembukaan, isi,
                 dan penutupan.
                 Mereka diajarkan bagaimana merencanakan setiap bagian dengan rapi, serta cara menghubungkan ide-ide
                 dengan lancar agar
@@ -81,7 +81,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Pemilihan Materi Khutbah atau Ceramah
             </h3>
-            <p>Dalam praktek khitobah, para santri biasanya diberi tugas untuk memilih atau merancang materi khutbah
+            <p style="text-align: justify;">Dalam praktek khitobah, para santri biasanya diberi tugas untuk memilih atau merancang materi khutbah
                 yang relevan
                 dengan kehidupan sehari-hari, atau tema-tema keagamaan tertentu. Mereka dapat memilih tema seperti
                 keutamaan shalat,
@@ -89,7 +89,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Latihan Pengucapan dan Intonasi
             </h3>
-            <p>Pengucapan yang jelas dan penggunaan intonasi yang tepat sangat penting dalam khitobah. Oleh karena itu,
+            <p style="text-align: justify;">Pengucapan yang jelas dan penggunaan intonasi yang tepat sangat penting dalam khitobah. Oleh karena itu,
                 para santri
                 dilatih untuk berbicara dengan pengucapan yang fasih, intonasi yang sesuai dengan maksud, serta menjaga
                 kecepatan
@@ -99,7 +99,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Gestur dan Bahasa Tubuh
             </h3>
-            <p>Selain aspek verbal, bahasa tubuh atau gestur juga memainkan peran penting dalam menyampaikan pidato yang
+            <p style="text-align: justify;">Selain aspek verbal, bahasa tubuh atau gestur juga memainkan peran penting dalam menyampaikan pidato yang
                 efektif. Para
                 santri dilatih untuk menggunakan gerakan tangan, ekspresi wajah, dan kontak mata yang mendukung pesan
                 yang disampaikan.
@@ -107,7 +107,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Simulasi Khutbah atau Ceramah
             </h3>
-            <p>Setelah memahami teknik-teknik dasar, para santri diberi kesempatan untuk melakukan praktek secara
+            <p style="text-align: justify;">Setelah memahami teknik-teknik dasar, para santri diberi kesempatan untuk melakukan praktek secara
                 langsung. Mereka akan
                 berdiri di depan audiens, baik itu teman sekelas atau guru, untuk mempraktikkan apa yang telah
                 dipelajari. Dalam
@@ -138,7 +138,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.

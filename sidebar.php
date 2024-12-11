@@ -107,7 +107,7 @@
     <!-- sidebar awal -->
     <nav>
         <ul>
-            <li><a href="#" class="logo">
+            <li><a href="dashboard.php" class="logo">
                     <img src="image/logo.png" alt="logo" width="250" height="150">
                     <span class="nav-item">Admin
             <li><a href="dashboard.php">
@@ -121,6 +121,14 @@
             <li><a href="data_guru.php">
                     <i class="fas fa-solid fa-user"></i>
                     <span class="nav-item">Data Guru</span>
+                </a></li>
+            <li><a href="data_pelajaran.php">
+                    <i class="fas fa-solid fa-book-open"></i>
+                    <span class="nav-item">Data Pelajaran</span>
+                </a></li>
+            <li><a href="ekstrakulikuler.php">
+                    <i class="fas fa-solid fa-chart-line"></i>
+                    <span class="nav-item">Ekstrakulikuler</span>
                 </a></li>
             <li><a href="logout.php" class="logout">
                     <i class="fas fa-sign-out-alt"></i>

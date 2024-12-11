@@ -1,4 +1,3 @@
-
 <?php
 include 'cek_auth.php';
 include 'sidebar.php';
@@ -136,26 +135,28 @@ include 'sidebar.php';
                     <div class="card">
                         <i class="fas fa-solid fa-graduation-cap"></i>
                         <h3>Data Santri</h3>
-                        <button class="fw-bold" href="data.php">More Info</button>
+                        <!-- <button type="button" class="btn btn-success text-light">Daftar Sekarang</button> -->
+                        <a href="data.php" class="btn btn-success text-light">More Info</a>
                     </div>
                     <div class="card">
                         <i class="fas fa-solid fa-user"></i>
                         <h3>Data Guru</h3>
-                        <button>More Info</button>
+                        <a href="data_guru.php" class="btn btn-success text-light">More Info</a>
                     </div>
                     <div class="card">
                         <i class="fas fa-solid fa-book-open"></i>
                         <h3>Data Pelajaran</h3>
-                        <button>More Info</button>
+                        <a href="data_pelajaran.php" class="btn btn-success text-light">More Info</a>
                     </div>
                     <div class="card">
                         <i class="fas fa-solid fa-chart-line"></i>
                         <h3>Ekstrakurikuler</h3>
-                        <button>More Info</button>
+                        <a href="ekstrakulikuler.php" class="btn btn-success text-light">More Info</a>
                     </div>
                 </div>
             </section>
         </div>
+
     </body>
 
     </html>

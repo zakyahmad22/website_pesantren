@@ -67,7 +67,7 @@ include 'navbar.php';
         <div class="container ">
             <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Perpustakaan
             </h2>
-            <p>Pondok Modern Al Muflihin adalah sebuah institusi pendidikan berbasis pesantren yang mengintegrasikan
+            <p style="text-align: justify;">Pondok Modern Al Muflihin adalah sebuah institusi pendidikan berbasis pesantren yang mengintegrasikan
                 nilai-nilai
                 keislaman dengan pendidikan modern. Perpustakaan di pondok seperti ini umumnya memainkan peran penting
                 sebagai pusat
@@ -76,7 +76,7 @@ include 'navbar.php';
                 Al Muflihin jika konsepnya serupa:</p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Fasilitas Perpustakaan
             </h3>
-            <p>Fasilitas yang disediakan biasanya meliputi ruang baca yang nyaman dan tenang, koleksi buku yang beragam,
+            <p style="text-align: justify;">Fasilitas yang disediakan biasanya meliputi ruang baca yang nyaman dan tenang, koleksi buku yang beragam,
                 serta layanan
                 peminjaman buku untuk santri. Beberapa pondok modern juga sudah mulai mengintegrasikan teknologi dengan
                 menyediakan
@@ -88,7 +88,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Sumber Referensi Ilmu
             </h3>
-            <p>Perpustakaan di Pondok Modern berfungsi sebagai sumber utama referensi ilmu bagi santri. Koleksi buku
+            <p style="text-align: justify;">Perpustakaan di Pondok Modern berfungsi sebagai sumber utama referensi ilmu bagi santri. Koleksi buku
                 yang ada mencakup
                 berbagai disiplin ilmu, baik agama maupun umum. Santri dapat memanfaatkan buku-buku tafsir, fiqih,
                 hadits, sejarah
@@ -98,7 +98,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Pusat Literasi dan Pendidikan
             </h3>
-            <p>Perpustakaan menjadi tempat bagi santri untuk mengembangkan budaya literasi, yaitu kebiasaan membaca dan
+            <p style="text-align: justify;">Perpustakaan menjadi tempat bagi santri untuk mengembangkan budaya literasi, yaitu kebiasaan membaca dan
                 menulis. Dengan
                 fasilitas ini, santri diajak untuk mengakses berbagai informasi yang berguna dalam pembentukan keilmuan
                 mereka.
@@ -110,7 +110,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Meningkatkan Wawasan dan Pengetahuan
             </h3>
-            <p>Salah satu fungsi utama perpustakaan adalah untuk memperluas wawasan santri. Melalui berbagai koleksi
+            <p style="text-align: justify;">Salah satu fungsi utama perpustakaan adalah untuk memperluas wawasan santri. Melalui berbagai koleksi
                 buku, santri dapat
                 menggali lebih dalam tentang berbagai topik yang mungkin tidak secara langsung diajarkan di kelas.
                 Dengan adanya
@@ -121,7 +121,7 @@ include 'navbar.php';
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Peningkatan Keterampilan dan
                 Kemampuan Santri
             </h3>
-            <p>Perpustakaan juga berfungsi untuk membantu santri mengasah keterampilan dan kemampuan mereka dalam
+            <p style="text-align: justify;">Perpustakaan juga berfungsi untuk membantu santri mengasah keterampilan dan kemampuan mereka dalam
                 berbagai bidang.
                 Selain literasi membaca, perpustakaan sering kali mengadakan berbagai kegiatan, seperti kajian ilmiah,
                 bedah buku, atau
@@ -131,7 +131,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Mendukung Proses Pembelajaran Mandiri
             </h3>
-            <p>Perpustakaan di Pondok Modern menyediakan fasilitas yang memungkinkan santri untuk belajar secara
+            <p style="text-align: justify;">Perpustakaan di Pondok Modern menyediakan fasilitas yang memungkinkan santri untuk belajar secara
                 mandiri. Buku-buku
                 yang tersedia memungkinkan santri untuk menggali materi lebih dalam di luar waktu pengajaran formal.
                 Dengan adanya akses
@@ -141,7 +141,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Tempat Interaksi dan Diskusi
             </h3>
-            <p>Perpustakaan juga menjadi tempat interaksi antara santri. Diskusi ilmiah, bedah buku, dan kajian bersama
+            <p style="text-align: justify;">Perpustakaan juga menjadi tempat interaksi antara santri. Diskusi ilmiah, bedah buku, dan kajian bersama
                 sering
                 dilaksanakan di perpustakaan untuk meningkatkan pemahaman santri terhadap materi yang mereka pelajari.
                 Ruang ini
@@ -172,7 +172,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.

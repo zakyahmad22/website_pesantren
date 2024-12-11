@@ -49,7 +49,7 @@ include 'navbar.php';
             <div class="clearfix pt-5">
                 <h1 class="font-family-sans-serif fw-bold fs-2">Profil & Data Sekolah SMP AL-MUFLIHIN, Kab. Cirebon,
                     Jawa Barat</h1>
-                <p>
+                <p style="text-align: justify;">
                     SMP AL-MUFLIHIN merupakan salah satu sekolah jenjang SMP berstatus Swasta yang berada di wilayah
                     Kec. Gebang, Kab.
                     Cirebon, Jawa Barat. SMP AL-MUFLIHIN didirikan pada tanggal 1 Januari 1970 dengan Nomor SK Pendirian
@@ -60,7 +60,7 @@ include 'navbar.php';
                     Fauziyah. Operator yang
                     bertanggung jawab adalah Asyifa Sulistiowati.
                 </p>
-                <p>
+                <p style="text-align: justify;">
                     SMP AL-MUFLIHIN merupakan salah satu sekolah jenjang SMP di wilayah Kab. Cirebon yang menawarkan
                     pendidikan berkualitas
                     dengan terakreditasi B dan sertifikasi ISO 9001:2008. Dengan adanya keberadaan SMP AL-MUFLIHIN,
@@ -69,17 +69,17 @@ include 'navbar.php';
                 </p>
                 <h1 class="font-family-sans-serif fw-bold fs-4">Akreditasi dan Sertifikasi SMP AL-MUFLIHIN
                 </h1>
-                <p>Sekolah ini telah terakreditasi B dengan Nomor SK Akreditasi 1179/BAN-SM/SK/2021 pada tanggal 16
+                <p style="text-align: justify;">Sekolah ini telah terakreditasi B dengan Nomor SK Akreditasi 1179/BAN-SM/SK/2021 pada tanggal 16
                     November 2021. Selain
                     itu, SMP AL-MUFLIHIN juga telah tersertifikasi ISO 9001:2008.</p>
                 <h2 class="font-family-sans-serif fw-bold fs-4">Peserta Didik SMP AL-MUFLIHIN
                 </h2>
-                <p>Pada saat artikel ini ditulis, SMP AL-MUFLIHIN memiliki total 57 siswa yang terdiri dari 33 siswa
+                <p style="text-align: justify;">Pada saat artikel ini ditulis, SMP AL-MUFLIHIN memiliki total 57 siswa yang terdiri dari 33 siswa
                     laki-laki dan 24 siswa
                     perempuan, di mana jumlah siswa laki-laki lebih banyak dari siswa perempuan.</p>
                 <h3 class="font-family-sans-serif fw-bold fs-4">Alamat SMP AL-MUFLIHIN
                 </h3>
-                <p>Alamat SMP AL-MUFLIHIN terletak di BLOK RENGAS DESA GEBANG ILIR, DESA GEBANG ILIR, Kec. Gebang, Kab.
+                <p style="text-align: justify;">Alamat SMP AL-MUFLIHIN terletak di BLOK RENGAS DESA GEBANG ILIR, DESA GEBANG ILIR, Kec. Gebang, Kab.
                     Cirebon, Jawa
                     Barat.</p>
             </div>
@@ -103,7 +103,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.

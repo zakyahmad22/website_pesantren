@@ -67,7 +67,7 @@ include 'navbar.php';
             <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Praktek Mengajar
                 Kelas Akhir TMI
             </h2>
-            <p>Praktek mengajar merujuk pada pelaksanaan langsung dari aktivitas mengajar oleh seorang pendidik di dalam
+            <p style="text-align: justify;">Praktek mengajar merujuk pada pelaksanaan langsung dari aktivitas mengajar oleh seorang pendidik di dalam
                 kelas atau
                 lingkungan belajar. Ini merupakan salah satu tahap yang penting dalam pembelajaran dan pengajaran, di
                 mana teori dan
@@ -78,14 +78,14 @@ include 'navbar.php';
                 praktek mengajar.</p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Persiapan
             </h3>
-            <p>Sebelum memulai sesi mengajar, seorang pendidik perlu melakukan persiapan yang matang. Ini melibatkan
+            <p style="text-align: justify;">Sebelum memulai sesi mengajar, seorang pendidik perlu melakukan persiapan yang matang. Ini melibatkan
                 perencanaan
                 pembelajaran, penyusunan materi ajar, dan memastikan bahwa segala sesuatu yang diperlukan untuk mengajar
                 sudah siap.
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Pelaksanaan
             </h3>
-            <p>Selama sesi praktek mengajar, pendidik akan melibatkan peserta didik dengan menyampaikan materi ajar,
+            <p style="text-align: justify;">Selama sesi praktek mengajar, pendidik akan melibatkan peserta didik dengan menyampaikan materi ajar,
                 menjelaskan
                 konsep, dan memberikan tugas atau aktivitas yang relevan. Pendidik juga harus memastikan bahwa mereka
                 dapat menjelaskan
@@ -93,7 +93,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Interaksi
             </h3>
-            <p>Interaksi adalah elemen kunci dalam praktek mengajar. Pendidik perlu membangun hubungan yang baik dengan
+            <p style="text-align: justify;">Interaksi adalah elemen kunci dalam praktek mengajar. Pendidik perlu membangun hubungan yang baik dengan
                 peserta didik,
                 memotivasi mereka, dan menciptakan lingkungan belajar yang positif. Komunikasi yang efektif juga menjadi
                 penting agar
@@ -101,7 +101,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Adaptasi
             </h3>
-            <p>Pendidik harus mampu mengadaptasi metode mengajar sesuai dengan kebutuhan dan karakteristik peserta
+            <p style="text-align: justify;">Pendidik harus mampu mengadaptasi metode mengajar sesuai dengan kebutuhan dan karakteristik peserta
                 didik. Kemampuan
                 untuk membaca respons peserta didik dan mengubah pendekatan mengajar jika diperlukan sangat penting
                 untuk memastikan
@@ -109,7 +109,7 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Evaluasi
             </h3>
-            <p>Seiring berjalannya sesi, pendidik perlu melakukan evaluasi terhadap pemahaman peserta didik. Ini bisa
+            <p style="text-align: justify;">Seiring berjalannya sesi, pendidik perlu melakukan evaluasi terhadap pemahaman peserta didik. Ini bisa
                 melibatkan
                 pertanyaan secara langsung, tugas, atau bentuk evaluasi lainnya untuk mengukur sejauh mana peserta didik
                 memahami materi
@@ -117,14 +117,14 @@ include 'navbar.php';
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Refleksi
             </h3>
-            <p>Setelah sesi selesai, seorang pendidik perlu merefleksikan kinerja mereka. Apa yang berhasil? Apa yang
+            <p style="text-align: justify;">Setelah sesi selesai, seorang pendidik perlu merefleksikan kinerja mereka. Apa yang berhasil? Apa yang
                 perlu
                 ditingkatkan? Refleksi ini membantu dalam pengembangan diri dan peningkatan kualitas pengajaran ke
                 depannya.
             </p>
             <h3 class="font-family-sans-serif fw-bold fs-4 underline-green-offset">Pengembangan Profesional
             </h3>
-            <p>Praktek mengajar juga dapat menjadi bagian dari pengembangan profesional seorang pendidik. Dengan terus
+            <p style="text-align: justify;">Praktek mengajar juga dapat menjadi bagian dari pengembangan profesional seorang pendidik. Dengan terus
                 mempraktikkan
                 dan merespons secara konstruktif terhadap pengalaman mengajar, seorang pendidik dapat terus meningkatkan
                 keterampilan
@@ -158,7 +158,7 @@ include 'navbar.php';
                 <div class="col-md-3 mb-4">
                     <h5 class="text-uppercase fw-bold">Pondok Modern <br> Al Muflihin</h5>
                     <p class="pt-3">
-                        <a href="https://www.google.com/maps?q=Jl.+Soekarno,+Gebang+Ilir,+Kec.+Gebang,+Kab.+Cirebon,+Jawa+Barat"
+                        <a href="https://www.google.com/maps/place/Pondok+Pesantren+Al+Muflihin/@-6.8244713,108.7404479,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6f0751d17aefcd:0x1c32cd5446d53dd9!8m2!3d-6.8244713!4d108.7430228!16s%2Fg%2F11g2s1stjx?entry=ttu&g_ep=EgoyMDI0MTIwOC4wIKXMDSoASAFQAw%3D%3D"
                             class="text-light mx-2 text-decoration-none" target="_blank">
                             <i class="fas fa-map-marker-alt fa-lg"></i>
                             Jl. Soekarno, Gebang Ilir, Kec. Gebang, Kab. Cirebon, Jawa Barat.
