@@ -76,7 +76,7 @@ include 'navbar.php';
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-light" aria-current="page" href="home.php">Beranda</a>
+                        <a class="nav-link text-light" aria-current="page" href="index.php">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-light text-decoration-none" href="profile.php">Tentang</a>
