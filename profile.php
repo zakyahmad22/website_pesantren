@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+include 'script.php';
 ?>
 
 
@@ -26,7 +27,7 @@ include 'navbar.php';
     <!-- navbar akhir -->
 
     <!-- profile awal -->
-    <div class="container-fluid mt-5 pt-5">
+    <div class="container-fluid mt-5 pt-5 fade-up">
         <div class="container">
             <!-- <h2 class="display-6 text-center font-family-sans-serif fw-bold" id="about">Profile Pondok</h2> -->
             <div class="clearfix pt-4">
@@ -72,7 +73,7 @@ include 'navbar.php';
     </div>
     <div class="container-fluid mt-0 pt-0 pb-5">
         <div class="container">
-            <div class="clearfix pt-5">
+            <div class="clearfix pt-5 fade-up">
                 <img src="image/foto3.jpg" class="col-md-6 float-md-center mb-3 crop-img rounded-4" width="300"
                     height="300">
                 <h1 class="font-family-sans-serif fw-bold fs-4">Pondok Modern Al Muflihin</h1>
@@ -110,38 +111,11 @@ include 'navbar.php';
             </div>
         </div>
     </div>
-    <!-- <div class="card-group">
-        <div class="card">
-            <img src="image/mengajar.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Kegiatan Belajar Mengajar</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/mengajar.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="image/mengajar.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div> -->
+
     <!-- profile akhir -->
 
     <!-- footer awal -->
-    <footer class="bg-light text-white text-center py-4">
+    <footer class="bg-light text-white text-center py-4 pt-5">
         <footer id="sticky-footer">
             <div class="container text-center">
                 <p class="mb-0"></p>
@@ -181,10 +155,12 @@ include 'navbar.php';
                 <div class="col-md-2 mb-4">
                     <h5 class="text-uppercase fw-bold">Menu</h5>
                     <ul class="list-unstyled mt-3">
-                        <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
-                        <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
-                        <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="index.php" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="profile.php" class="text-light text-decoration-none">Tentang</a></li>
+                        <li><a href="activity.php" class="text-light text-decoration-none">Kegiatan</a></li>
+                        <li><a href="pendaftaran.php" class="text-light text-decoration-none">Pendaftaran</a></li>
+                        <li><a href="contact.php" class="text-light text-decoration-none">Kontak</a></li>
+                        <li><a href="login.php" class="text-light text-decoration-none">Login</a></li>
                     </ul>
                 </div>
                 <!-- Section 3: Program -->

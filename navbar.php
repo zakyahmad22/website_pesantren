@@ -41,7 +41,7 @@
     <nav class="navbar navbar-expand-lg bg-success fixed-top shadow-lg">
         <div class="container">
             <a href="index.html" class="navbar-expand-lg">
-                <a href="#top">
+                <a href="index.php">
                     <img src="image/logo1.png" alt="logo1" width="150" height="65">
                 </a>
             </a>

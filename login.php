@@ -1,4 +1,8 @@
 <?php
+include 'script.php';
+?>
+
+<?php
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 session_start();
@@ -143,9 +147,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             font-size: 0.9rem;
             margin-bottom: 10px;
         }
+
+        button.back {
+            background: transparent;
+            /* Biru muda */
+            color: #333;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        
     </style>
 
-    <div class="login-container">
+    <div class="login-container fade-up">
         <div class="login-box">
             <img src="image/logo.png" alt="Logo" width="90" height="90">
             <h1>Pondok <br> Modern Al Muflihin</h1>
@@ -162,6 +179,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit">Login</button>
+                <button type="button" class="back" onclick="window.location.href='index.php'">Back</button>
             </form>
         </div>
     </div>

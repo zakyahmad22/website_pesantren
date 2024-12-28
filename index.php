@@ -3,7 +3,6 @@ include 'navbar.php';
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -132,7 +131,7 @@ include 'navbar.php';
 
     <!-- <nav class="navbar bg-warning pb-3"> -->
 
-    <div class="container mt-5 text-left">
+    <div class="container mt-5 text-left fade-up">
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <h4 class="display-6 font-family-sans-serif fw-bold pt-5" id="profile">Penerimaan</h4>
@@ -164,28 +163,44 @@ include 'navbar.php';
 
     <!-- profile awal -->
 
-    <div class="container-fluid profile pt-5 pb-5">
-        <div class="container text-center">
-            <h1 class="display-6 font-family-sans-serif fw-bold">Falsafah Pondok</h1>
-            <p>Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
-                menyelenggarakan pendidikan untuk
-                megembangkan seluruh poetensi para santri secara menyeluruh.</p>
+    <style>
+        /* Awal: elemen tidak terlihat dan bergeser ke bawah */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(50px);
+            /* Geser elemen ke bawah */
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        /* Saat elemen terlihat: posisi normal */
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <div class="container-fluid profile pt-3 pb-3 fade-up">
+        <div class="container text-center fade-up">
+            <h1 class="display-6 font-family-sans-serif fw-bold fade-up">Falsafah Pondok</h1>
+            <p class="fade-up">
+                Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang
+                menyelenggarakan pendidikan untuk mengembangkan seluruh potensi para santri secara menyeluruh.
+            </p>
             <div class="row pt-4">
-                <div class="col-md-4">
+                <div class="col-md-4 fade-up">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
                         <path
                             d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z" />
                     </svg>
                     <h2 class="display-7 mt-3 font-family-sans-serif fw-bold">Panca Jiwa</h2>
-                    <p>Seluruh kehidupan di Pondok Modern Al Muflihin
-                        didasarkan pada nilai-nilai kehidupan dalam
+                    <p>Seluruh kehidupan di Pondok Modern Al Muflihin didasarkan pada nilai-nilai kehidupan dalam
                         Panca Jiwa.</p>
                     <a href="pancajiwa.php">
                         <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 fade-up">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
                         <path
@@ -200,7 +215,7 @@ include 'navbar.php';
                         <button type="button" class="btn btn-success text-light">Baca Selengkapnya</button>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 fade-up">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                         class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -216,50 +231,107 @@ include 'navbar.php';
             </div>
         </div>
     </div>
+
     <!-- <hr class="my-4" style="border: 2px solid #333;"> -->
 
     <!-- profile akhir -->
 
     <!-- activity awal -->
 
-    <div class="container-fluid pt-5 pb-5">
+    <style>
+        .card {
+            overflow: hidden;
+            /* Untuk menghindari gambar yang keluar dari batas card */
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Transisi untuk animasi */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            /* Card akan sedikit terangkat saat di-hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            /* Bayangan lebih gelap */
+        }
+
+        .card img {
+            object-fit: cover;
+            /* Menjaga gambar tetap proporsional */
+            height: 200px;
+            /* Pastikan semua gambar memiliki tinggi yang sama */
+        }
+
+        .container-fluid {
+            background-color: #f8f9fa;
+            /* Memberi warna latar belakang yang lebih lembut */
+        }
+
+        .text-center {
+            margin-bottom: 30px;
+            /* Memberi jarak yang lebih baik antara teks dan card */
+        }
+
+        .card-body {
+            padding: 20px;
+            /* Memberi jarak antara konten dan batas card */
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            /* Menyesuaikan ukuran font judul */
+        }
+
+        .card-text {
+            font-size: 1rem;
+            /* Menyesuaikan ukuran font teks */
+        }
+
+        .btn {
+            margin-top: 10px;
+            /* Memberi jarak antara teks dan tombol */
+        }
+
+        @media (max-width: 767px) {
+            .card {
+                margin-bottom: 20px;
+                /* Memberi jarak lebih antar card pada layar kecil */
+            }
+        }
+    </style>
+
+    <div class="container-fluid pt-3 pb-3 fade-up">
         <div class="container text-center">
             <h2 class="display-6 font-family-sans-serif fw-bold" id="activity">Pusat Informasi</h2>
-            <p>Pendidikan Pondok Modern Al Muflihin
-                menekankan pada pembentukan pribadi mukmin
-                muslim.</p>
-            <div class="row pt-4 gx-4 gy-4">
+            <p>Pendidikan Pondok Modern Al Muflihin menekankan pada pembentukan pribadi mukmin muslim.</p>
+            <div class="row pt-4 gx-4 gy-4 justify-content-center">
                 <div class="col-md-4">
-                    <div class="card crop-img" style="width: 18rem;">
-                        <img src="image/ujian4.jpg" class="card-img-top" alt="foto1" width="200" height="200">
+                    <div class="card shadow-sm" style="width: 100%; border-radius: 10px;">
+                        <img src="image/ujian4.jpg" class="card-img-top" alt="foto1">
                         <div class="card-body">
                             <h5 class="card-title">Pendaftaran & Ujian</h5>
-                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
-                                Al Muflihin</p>
+                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern Al Muflihin</p>
                             <a href="ujian.php" class="btn btn-success text-light">Read More</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card crop-img" style="width: 18rem;">
-                        <img src="image/foto6.jpg" class="card-img-top" alt="foto1" width="200" height="200">
+                    <div class="card shadow-sm" style="width: 100%; border-radius: 10px;">
+                        <img src="image/foto6.jpg" class="card-img-top" alt="foto2">
                         <div class="card-body">
                             <h5 class="card-title">SMP Al Muflihin</h5>
-                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
-                                Al Muflihin</p>
+                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern Al Muflihin</p>
                             <a href="smp.php" class="btn btn-success text-light">Read More</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card crop-img" style="width: 18rem;">
-                        <img src="image/foto11.JPG" class="card-img-top" alt="foto11" width="200" height="200">
+                    <div class="card shadow-sm" style="width: 100%; border-radius: 10px;">
+                        <img src="image/foto11.JPG" class="card-img-top" alt="foto3">
                         <div class="card-body">
                             <h5 class="card-title">MA Al Muflihin</h5>
-                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern
-                                Al Muflihin</p>
+                            <p class="card-text">Informasi Pendaftaran Santri Baru Pondok Modern Al Muflihin</p>
                             <a href="ma.php" class="btn btn-success text-light">Read More</a>
                         </div>
                     </div>
@@ -267,11 +339,12 @@ include 'navbar.php';
             </div>
         </div>
     </div>
+
     <!-- activity akhir -->
 
     <!-- tentang awal -->
 
-    <div class="container-fluid pt-4 pb-5">
+    <div class="container-fluid pt-3 pb-3 fade-up">
         <div class="container">
             <h2 class="display-6 text-center font-family-sans-serif fw-bold" id="about">About</h2>
             <p class="text-center">
@@ -314,7 +387,7 @@ include 'navbar.php';
 
     <!-- footer awal -->
 
-    <footer class="bg-light text-white text-center py-4">
+    <footer class="bg-light text-white text-center py-4 pt-5">
         <footer id="sticky-footer">
             <div class="container text-center">
                 <p class="mb-0"></p>
@@ -354,10 +427,12 @@ include 'navbar.php';
                 <div class="col-md-2 mb-4">
                     <h5 class="text-uppercase fw-bold">Menu</h5>
                     <ul class="list-unstyled mt-3">
-                        <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
-                        <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
-                        <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="index.php" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="profile.php" class="text-light text-decoration-none">Tentang</a></li>
+                        <li><a href="activity.php" class="text-light text-decoration-none">Kegiatan</a></li>
+                        <li><a href="pendaftaran.php" class="text-light text-decoration-none">Pendaftaran</a></li>
+                        <li><a href="contact.php" class="text-light text-decoration-none">Kontak</a></li>
+                        <li><a href="login.php" class="text-light text-decoration-none">Login</a></li>
                     </ul>
                 </div>
                 <!-- Section 3: Program -->
@@ -402,6 +477,28 @@ include 'navbar.php';
     </footer>
 
     <!-- footer akhir -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".fade-up");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible"); // Tambahkan kelas 'visible' saat elemen terlihat
+                    } else {
+                        entry.target.classList.remove("visible"); // Hapus kelas 'visible' saat elemen keluar viewport
+                    }
+                });
+            }, {
+                threshold: 0.2, // Elemen terlihat ketika 20% masuk ke viewport
+            });
+
+            elements.forEach((element) => observer.observe(element));
+        });
+
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

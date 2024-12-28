@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+include 'script.php';
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +45,7 @@ include 'navbar.php';
 
 
     <!-- panca jiwa awal -->
-    <div class="container-fluid mt-5 pt-5 pb-3">
+    <div class="container-fluid mt-5 pt-5 pb-3 fade-up">
         <div class="container">
             <div class="clearfix pt-4">
                 <h1 class="font-family-sans-serif fw-bold fs-2 text-center">INFORMASI TES UJIAN</h1>
@@ -120,10 +121,12 @@ include 'navbar.php';
                 <div class="col-md-2 mb-4">
                     <h5 class="text-uppercase fw-bold">Menu</h5>
                     <ul class="list-unstyled mt-3">
-                        <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
-                        <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
-                        <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="index.php" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="profile.php" class="text-light text-decoration-none">Tentang</a></li>
+                        <li><a href="activity.php" class="text-light text-decoration-none">Kegiatan</a></li>
+                        <li><a href="pendaftaran.php" class="text-light text-decoration-none">Pendaftaran</a></li>
+                        <li><a href="contact.php" class="text-light text-decoration-none">Kontak</a></li>
+                        <li><a href="login.php" class="text-light text-decoration-none">Login</a></li>
                     </ul>
                 </div>
                 <!-- Section 3: Program -->

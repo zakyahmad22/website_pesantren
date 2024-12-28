@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+include 'script.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,93 +27,143 @@ include 'navbar.php';
 
 <!-- kegiatan awal -->
 
-<div class="container-fluid mt-4 pt-4 pb-3">
+<style>
+    .card {
+        border-radius: 10px;
+        /* Membulatkan sudut card */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* Animasi transformasi dan bayangan */
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        /* Card terangkat sedikit saat di-hover */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        /* Bayangan lebih besar saat hover */
+    }
+
+    .card img {
+        object-fit: cover;
+        /* Menjaga agar gambar tetap proporsional dan memenuhi ruang card */
+        height: 200px;
+        /* Ukuran gambar tetap konsisten */
+    }
+
+    .card-body {
+        padding: 20px;
+        /* Memberikan padding pada konten dalam card */
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        /* Menyesuaikan ukuran font judul */
+    }
+
+    .card-text {
+        font-size: 1rem;
+        /* Ukuran font deskripsi */
+    }
+
+    .btn {
+        margin-top: 10px;
+        /* Memberi jarak antara teks dan tombol */
+    }
+</style>
+
+<div class="container-fluid mt-4 pt-4 pb-3 fade-up">
     <div class="container text-center">
         <h2 class="display-6 font-family-sans-serif fw-bold" id="activity">Kegiatan</h2>
         <p>Pondok Pesantren Modern Al Muflihin Cirebon</p>
     </div>
 </div>
 
-<div class="card-group">
-    <div class="card">
-        <img src="image/foto6.jpg" class="card-img-top" alt="foto6">
-        <div class="card-body">
-            <h5 class="card-title">Kegiatan Belajar Mengajar</h5>
-            <p class="card-text">Proses pendidikan yang berlangsung di lingkungan pesantren, di mana santri
-                dan ustadz/ustadzah berinteraksi
-                untuk mengembangkan ilmu agama.</p>
-            <a href="kbm.php" class="btn btn-success text-light">Read More</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="image/foto9.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Haul Almagfurlah</h5>
-            <p class="card-text">Memperingati haul Almagfurlah
-                Kyai. M. Rohmat Romdlon, S.Ag sebagai pimpinan
-                Pondok Modern Al Muflihin.</p>
-            <a href="haul.php" class="btn btn-success text-light">Read More</a>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="image/foto7.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Perpustakaan</h5>
-            <p class="card-text">Fasilitas yang menyediakan buku untuk mendukung
-                proses belajar santri, termasuk
-                kitab kuning, Al-Qur'an, hadist, dan lain-lainnya.</p>
-            <a href="perpus.php" class="btn btn-success text-light">Read More</a>
-        </div>
-    </div>
-
-    <div class="card-group">
-        <div class="card pt-4">
-            <img src="image/foto1.JPG" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Tari Kombinasi</h5>
-                <p class="card-text">biasanya melibatkan penggabungan gerakan tari tradisional dengan unsur-unsur
-                    nilai keagamaan atau budaya lokal yang
-                    diajarkan di lingkungan pesantren.</p>
-                <a href="tarkom.php" class="btn btn-success text-light">Read More</a>
+<div class="container fade-up">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/foto6.jpg" class="card-img-top" alt="foto6">
+                <div class="card-body">
+                    <h5 class="card-title">Kegiatan Belajar Mengajar</h5>
+                    <p class="card-text">Proses pendidikan yang berlangsung di lingkungan pesantren, di mana santri dan
+                        ustadz/ustadzah berinteraksi untuk mengembangkan ilmu agama.</p>
+                    <a href="kbm.php" class="btn btn-success text-light">Read More</a>
+                </div>
             </div>
         </div>
 
-        <div class="card pt-4">
-            <img src="image/kegiatan1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Praktek Khitobah</h5>
-                <p class="card-text">Kegiatan latihan berpidato atau berbicara di depan umum yang dilakukan oleh
-                    santri untuk mengasah kemampuan komunikasi
-                    dan penyampaian dakwah.
-                </p>
-                <a href="khitobah.php" class="btn btn-success text-light">Read More</a>
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/foto9.JPG" class="card-img-top" alt="Haul Almagfurlah">
+                <div class="card-body">
+                    <h5 class="card-title">Haul Almagfurlah</h5>
+                    <p class="card-text">Memperingati haul Almagfurlah Kyai. M. Rohmat Romdlon, S.Ag sebagai pimpinan
+                        Pondok Modern Al Muflihin.</p>
+                    <a href="haul.php" class="btn btn-success text-light">Read More</a>
+                </div>
             </div>
         </div>
 
-        <div class="card pt-4">
-            <img src="image/mengajar.jpg" class="card-img-top" alt="mengajar">
-            <div class="card-body">
-                <h5 class="card-title">Praktek Mengajar</h5>
-                <p class="card-text">Kegiatan di mana santri atau calon pengajar di pesantren melakukan pembelajaran
-                    di hadapan teman-teman mereka atau
-                    kelompok santri lainnya.</p>
-                <a href="praktek_mengajar.php" class="btn btn-success text-light">Read More</a>
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/foto7.jpg" class="card-img-top" alt="Perpustakaan">
+                <div class="card-body">
+                    <h5 class="card-title">Perpustakaan</h5>
+                    <p class="card-text">Fasilitas yang menyediakan buku untuk mendukung proses belajar santri, termasuk
+                        kitab kuning, Al-Qur'an, hadist, dan lain-lainnya.</p>
+                    <a href="perpus.php" class="btn btn-success text-light">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/foto1.JPG" class="card-img-top" alt="Tari Kombinasi">
+                <div class="card-body">
+                    <h5 class="card-title">Tari Kombinasi</h5>
+                    <p class="card-text">Biasanya melibatkan penggabungan gerakan tari tradisional dengan unsur-unsur
+                        nilai keagamaan atau budaya lokal yang diajarkan di lingkungan pesantren.</p>
+                    <a href="tarkom.php" class="btn btn-success text-light">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/kegiatan1.jpg" class="card-img-top" alt="Praktek Khitobah">
+                <div class="card-body">
+                    <h5 class="card-title">Praktek Khitobah</h5>
+                    <p class="card-text">Kegiatan latihan berpidato atau berbicara di depan umum yang dilakukan oleh
+                        santri untuk mengasah kemampuan komunikasi dan penyampaian dakwah.</p>
+                    <a href="khitobah.php" class="btn btn-success text-light">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm h-100">
+                <img src="image/mengajar.jpg" class="card-img-top" alt="Praktek Mengajar">
+                <div class="card-body">
+                    <h5 class="card-title">Praktek Mengajar</h5>
+                    <p class="card-text">Kegiatan di mana santri atau calon pengajar di pesantren melakukan pembelajaran
+                        di hadapan teman-teman mereka atau kelompok santri lainnya.</p>
+                    <a href="praktek_mengajar.php" class="btn btn-success text-light">Read More</a>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- kegiatan akhir -->
-
-    <!-- footer awal -->
-
-    <footer class="bg-light text-white text-center py-4">
-        <footer id="sticky-footer">
-            <div class="container text-center">
-                <p class="mb-0"></p>
-        </footer>
 </div>
+
+
+<!-- kegiatan akhir -->
+
+<!-- footer awal -->
+
+<footer class="bg-light text-white text-center py-4">
+    <footer id="sticky-footer">
+        <div class="container text-center">
+            <p class="mb-0"></p>
+    </footer>
+    </div>
 </footer>
 <footer class="bg-success text-light py-5">
     <div class="container">
@@ -147,11 +198,13 @@ include 'navbar.php';
             <div class="col-md-2 mb-4">
                 <h5 class="text-uppercase fw-bold">Menu</h5>
                 <ul class="list-unstyled mt-3">
-                    <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
-                    <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
-                    <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
-                </ul>
+                        <li><a href="index.php" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="profile.php" class="text-light text-decoration-none">Tentang</a></li>
+                        <li><a href="activity.php" class="text-light text-decoration-none">Kegiatan</a></li>
+                        <li><a href="pendaftaran.php" class="text-light text-decoration-none">Pendaftaran</a></li>
+                        <li><a href="contact.php" class="text-light text-decoration-none">Kontak</a></li>
+                        <li><a href="login.php" class="text-light text-decoration-none">Login</a></li>
+                    </ul>
             </div>
             <!-- Section 3: Program -->
             <div class="col-md-2 mb-4">

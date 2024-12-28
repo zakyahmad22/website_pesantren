@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+include 'script.php';
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +45,7 @@ include 'navbar.php';
 
 
     <!-- motto pondok awal -->
-    <div class="container-fluid mt-5 pt-5 pb-2">
+    <div class="container-fluid mt-5 pt-5 pb-2 fade-up">
         <div class="container">
             <div class="clearfix pt-5">
                 <h1 class="font-family-sans-serif fw-bold fs-2">Motto Pondok</h1>
@@ -55,7 +56,7 @@ include 'navbar.php';
                     merupakan moto pendidikan
                     di Pondok Modern Darussalam Gontor.
                 </p>
-                <img src="image/foto4.JPG" class="rounded-4" alt="foto4" width="800" height="400">
+                <img src="image/foto4.JPG" class="rounded-4" alt="foto4" width="500" height="300">
                 <h3 class="font-family-sans-serif fw-bold pt-5 fs-4">Motto Pondok dalam kehidupan Pondok Modern
                     Al-Muflihin:</h3>
                 <h1 class="font-family-sans-serif fs-5">1. Berbudi tinggi</h1>
@@ -141,10 +142,12 @@ include 'navbar.php';
                 <div class="col-md-2 mb-4">
                     <h5 class="text-uppercase fw-bold">Menu</h5>
                     <ul class="list-unstyled mt-3">
-                        <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
-                        <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
-                        <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="index.php" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="profile.php" class="text-light text-decoration-none">Tentang</a></li>
+                        <li><a href="activity.php" class="text-light text-decoration-none">Kegiatan</a></li>
+                        <li><a href="pendaftaran.php" class="text-light text-decoration-none">Pendaftaran</a></li>
+                        <li><a href="contact.php" class="text-light text-decoration-none">Kontak</a></li>
+                        <li><a href="login.php" class="text-light text-decoration-none">Login</a></li>
                     </ul>
                 </div>
                 <!-- Section 3: Program -->

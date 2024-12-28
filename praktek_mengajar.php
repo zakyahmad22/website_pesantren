@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+include 'script.php';
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +63,7 @@ include 'navbar.php';
         }
     </style>
 
-    <div class="container-fluid mt-4 pb-3">
+    <div class="container-fluid mt-4 pb-3 fade-up">
         <div class="container ">
             <h2 class="display-6 font-family-sans-serif fw-bold underline-green-offset" id="contact">Praktek Mengajar
                 Kelas Akhir TMI

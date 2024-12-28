@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+include 'script.php';
 ?>
 
 
@@ -13,7 +14,7 @@ include 'navbar.php';
 
 <!-- pendaftaran awal -->
 
-<div class="container-fluid pt-4 pb-2">
+<div class="container-fluid pt-4 pb-2 fade-up">
     <div class="container">
         <div class="clearfix pt-5">
             <img src="image/mengajar.jpg" class="col-md-6 float-md-end mb-3 crop-img rounded-4" width="300"
@@ -57,10 +58,10 @@ include 'navbar.php';
         </div>
     </div>
 
-    <div class="container-fluid profile pt-3 pb-5">
+    <div class="container-fluid profile pt-3 pb-5 fade-up">
         <div class="container text-center">
             <h1 class="display-7 font-family-sans-serif fw-bold pt-5">Ketentuan Pendaftaran</h1>
-            <div class="row pt-4">
+            <div class="row pt-3">
                 <div class="col-md-4 text-start">
                     <h2 class="fs-4 mt-3 font-family-sans-serif fw-bold">Syarat Pendaftaran</h2>
                     <p style="margin-bottom: 8px;">1. Membayar administrasi Rp. 150.000</p>
@@ -135,11 +136,13 @@ include 'navbar.php';
             <div class="col-md-2 mb-4">
                 <h5 class="text-uppercase fw-bold">Menu</h5>
                 <ul class="list-unstyled mt-3">
-                    <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
-                    <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
-                    <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
-                    <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
-                </ul>
+                        <li><a href="index.php" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="profile.php" class="text-light text-decoration-none">Tentang</a></li>
+                        <li><a href="activity.php" class="text-light text-decoration-none">Kegiatan</a></li>
+                        <li><a href="pendaftaran.php" class="text-light text-decoration-none">Pendaftaran</a></li>
+                        <li><a href="contact.php" class="text-light text-decoration-none">Kontak</a></li>
+                        <li><a href="login.php" class="text-light text-decoration-none">Login</a></li>
+                    </ul>
             </div>
             <!-- Section 3: Program -->
             <div class="col-md-2 mb-4">

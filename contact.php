@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+include 'script.php';
 ?>
 
 
@@ -52,7 +53,7 @@ include 'navbar.php';
 
     <!-- kontak awal -->
 
-    <div class="container-fluid mt-5 pt-5 pb-5">
+    <div class="container-fluid mt-5 pt-5 pb-5 fade-up">
         <div class="container text-center">
             <h2 class="display-6 font-family-sans-serif fw-bold" id="contact">Hubungi Kami</h2>
             <p>Al Muflihin adalah Pondok Pesantren Modern dengan manhaj Darunnajah dan Gontor yang menyelenggarakan
@@ -68,7 +69,7 @@ include 'navbar.php';
                         <path fill-rule="evenodd"
                             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                     </svg>
-                    <h4>Lamine Yamal</h4>
+                    <h4>Contact Person</h4>
                     <p>Web Desaigner</p>
                     <p>
                         <a href="" class="social">
@@ -101,7 +102,7 @@ include 'navbar.php';
                         <path fill-rule="evenodd"
                             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                     </svg>
-                    <h4>Lionel Zakyy</h4>
+                    <h4>Contact Person</h4>
                     <p>Programmer</p>
                     <p>
                         <a href="" class="social">
@@ -134,7 +135,7 @@ include 'navbar.php';
                         <path fill-rule="evenodd"
                             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                     </svg>
-                    <h4>El-Dowsky</h4>
+                    <h4>Contact Person</h4>
                     <p>Front End Developer</p>
                     <p>
                         <a href="" class="social">
@@ -220,10 +221,12 @@ include 'navbar.php';
                 <div class="col-md-2 mb-4">
                     <h5 class="text-uppercase fw-bold">Menu</h5>
                     <ul class="list-unstyled mt-3">
-                        <li><a href="home.php" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="profile.php" class="text-light text-decoration-none">Profile</a></li>
-                        <li><a href="activity.php" class="text-light text-decoration-none">Activity</a></li>
-                        <li><a href="contact.php" class="text-light text-decoration-none">Contact</a></li>
+                        <li><a href="index.php" class="text-light text-decoration-none">Beranda</a></li>
+                        <li><a href="profile.php" class="text-light text-decoration-none">Tentang</a></li>
+                        <li><a href="activity.php" class="text-light text-decoration-none">Kegiatan</a></li>
+                        <li><a href="pendaftaran.php" class="text-light text-decoration-none">Pendaftaran</a></li>
+                        <li><a href="contact.php" class="text-light text-decoration-none">Kontak</a></li>
+                        <li><a href="login.php" class="text-light text-decoration-none">Login</a></li>
                     </ul>
                 </div>
                 <!-- Section 3: Program -->

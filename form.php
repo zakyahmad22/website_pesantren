@@ -152,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="form-actions">
                 <button type="submit" class="btn btn-success">Simpan</button>
                 <!-- <a href="home.php" class="btn btn-success">Simpan</a> -->
-                <a href="home.php" class="btn btn-danger">Batal</a>
+                <a href="index.php" class="btn btn-danger">Batal</a>
             </div>
         </form>
     </div>
